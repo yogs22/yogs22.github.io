@@ -1,5 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD
 	font-size: 15px;
 	overflow-x: hidden;
 }
@@ -113,12 +114,15 @@ section {
     padding: 30px;
     width: 95%;
 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.8));
+=======
+>>>>>>> d11e9d1431f2a59dd0f0b59c4f4f33097a7d441c
 }
 
 /****
 ** Music Categories
 **/
 
+<<<<<<< HEAD
 .header-image {
 	width: 100%;
 }
@@ -190,4 +194,8 @@ footer {
 
 footer a {
 	color: #ffffff;
+=======
+.grey-header {
+	background: #e2e2e2;
+>>>>>>> d11e9d1431f2a59dd0f0b59c4f4f33097a7d441c
 }
