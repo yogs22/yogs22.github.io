@@ -1,6 +1,5 @@
 body {
 	font-family: 'Roboto', sans-serif;
-<<<<<<< HEAD
 	font-size: 15px;
 	overflow-x: hidden;
 }
@@ -8,6 +7,10 @@ body {
 section {
 	padding: 30px 0;
 	width: 100%;
+}
+
+.grey-header {
+	background: #e2e2e2;
 }
 
 .image {
@@ -89,6 +92,10 @@ section {
 	width: 7%;
 }
 
+.navbar-image-wedding {
+	width: 5%;
+}
+
 .nav-item {
 	margin: 0 20px;
 }
@@ -114,15 +121,12 @@ section {
     padding: 30px;
     width: 95%;
 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.8));
-=======
->>>>>>> d11e9d1431f2a59dd0f0b59c4f4f33097a7d441c
 }
 
 /****
 ** Music Categories
 **/
 
-<<<<<<< HEAD
 .header-image {
 	width: 100%;
 }
@@ -151,9 +155,11 @@ section {
 
 .wedding-header-overlay-description {
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	flex-wrap: wrap;
-	padding: 200px;
+	align-items: center;
+	height: 100%;
+	width: 100%;
 }
 
 .wedding-slide-work {
@@ -180,8 +186,25 @@ section {
 	height: 200px;
 }
 
-.typcn {
-	font-size: 30px;
+.wedding-image-row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.wedding-image-col {
+	-ms-flex: 33.1%; /* IE10 */
+	flex: 33.1%;
+	max-width: 33.1%;
+	padding: 0 4px;
+}
+
+.wedding-image-col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
 /****
@@ -194,8 +217,4 @@ footer {
 
 footer a {
 	color: #ffffff;
-=======
-.grey-header {
-	background: #e2e2e2;
->>>>>>> d11e9d1431f2a59dd0f0b59c4f4f33097a7d441c
 }
