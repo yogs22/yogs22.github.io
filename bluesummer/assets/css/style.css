@@ -9,7 +9,7 @@ section {
 	width: 100%;
 }
 
-.grey-header {
+.gray-header {
 	background: #e2e2e2;
 }
 
@@ -59,8 +59,12 @@ section {
 	width: 100%;
 }
 
-.bg-grey {
+.bg-gray {
 	background: #e2e2e2;
+}
+
+.bg-light-gray {
+	background: #f9f9f9;
 }
 
 /****
@@ -205,6 +209,30 @@ section {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+}
+
+/****
+ ** Film Categories
+ ***/
+
+.p-team {
+	padding: 100px 50px;
+}
+
+.film-image {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+}
+
+.film-image-box {
+	padding: 20px;
+}
+
+.film-image-box img {
+	width: 100%;
+	height: 200px;
 }
 
 /****
