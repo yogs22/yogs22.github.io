@@ -9,7 +9,7 @@ section {
 	width: 100%;
 }
 
-.gray-header {
+.grey-header {
 	background: #e2e2e2;
 }
 
@@ -59,12 +59,8 @@ section {
 	width: 100%;
 }
 
-.bg-gray {
+.bg-grey {
 	background: #e2e2e2;
-}
-
-.bg-light-gray {
-	background: #f9f9f9;
 }
 
 /****
@@ -79,6 +75,12 @@ section {
 	color: #ffffff;
 }
 
+/****
+** Header Class
+**/
+.header{
+ max-width: 100%;
+}
 
 /****
 ** Custom Navbar
@@ -93,11 +95,11 @@ section {
 }
 
 .navbar-image {
-	width: 95px;
+	width: 7%;
 }
 
 .navbar-image-wedding {
-	width: 80px;
+	width: 5%;
 }
 
 .nav-item {
@@ -105,7 +107,7 @@ section {
 }
 
 .navbar-light {
-	border-bottom: 2px solid #e7e7e7;
+	    box-shadow: 0px 2px 5px 0px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -123,8 +125,20 @@ section {
     color: white;
     text-align: left;
     padding: 30px;
-    width: 98%;
+    width: 95%;
 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.8));
+}
+
+.bg-custom{
+	background-color: #ffffffe8!important;
+}
+
+.nav-img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /****
@@ -212,36 +226,58 @@ section {
 }
 
 /****
- ** Film Categories
- ***/
-
-.p-team {
-	padding: 100px 50px;
+** Section Image 3
+**/
+.act{
+	max-width: 50%;
+	width: auto;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
 }
 
-.film-image {
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	align-items: center;
+.main-page{
+	margin: 10px auto;
 }
 
-.film-image-box {
-	padding: 20px;
+.home{
+	padding-right: 15px;
+    padding-left: 15px;
+	margin-bottom: 40px;
 }
 
-.film-image-box img {
-	width: 100%;
-	height: 200px;
+.home a{
+
+	margin:20px;
 }
+
+.home:hover{
+	box-shadow: 2px 2px 2px 1px #92a0ab;
+    border-radius: 10px;
+}
+
 
 /****
 ** Footer Class
 **/
 
 footer {
-	background: #043f70;
+	padding: 10px;
 }
+
+.nav-foot{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+footer .nav-foot img{
+	width: auto;
+    height: 20px;
+    margin: 15px;
+}
+
 
 footer a {
 	color: #ffffff;
