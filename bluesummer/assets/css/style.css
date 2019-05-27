@@ -78,7 +78,7 @@ section {
 /****
 ** Header Class
 **/
-.header{
+.header {
  max-width: 100%;
 }
 
@@ -134,7 +134,7 @@ section {
 }
 
 .nav-img {
-    max-width: 70%;
+    max-width: 30%;
     height: auto;
     display: block;
     margin-left: auto;
