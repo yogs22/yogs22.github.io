@@ -63,6 +63,10 @@ section {
 	background: #e2e2e2;
 }
 
+.bg-light-grey {
+	background: #f2f2f2;
+}
+
 /****
 ** Custom Color
 **/
@@ -99,6 +103,14 @@ section {
 	background: transparent;
 }
 
+.navbar-absolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
 .navbar-image {
 	width: 7%;
 }
@@ -112,7 +124,7 @@ section {
 }
 
 .navbar-light {
-	    box-shadow: 0px 2px 5px 0px;
+	box-shadow: 0px 2px 5px 0px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -151,6 +163,18 @@ section {
 
 .nav-img-mini {
     max-width: 60px;
+}
+
+.nav-bb {
+	border-bottom: 2px solid transparent;
+}
+
+.nav-bb:hover {
+	border-bottom: 2px solid #fff;
+}
+
+.nav-item .nav-active {
+	border-bottom: 2px solid #fff;
 }
 
 /****
