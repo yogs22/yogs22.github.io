@@ -75,6 +75,11 @@ section {
 	color: #ffffff;
 }
 
+.bg-blue {
+	background: #043f70;
+	color: #fff;
+}
+
 /****
 ** Header Class
 **/
@@ -130,15 +135,22 @@ section {
 }
 
 .bg-custom{
-	background-color: #ffffffe8!important;
+	background-color: #ffffffe8 !important;
 }
 
-.nav-img {
-    max-width: 30%;
+.nav-img, .nav-img-mini {
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.nav-img {
+	max-width: 170px;
+}
+
+.nav-img-mini {
+    max-width: 60px;
 }
 
 /****
@@ -226,9 +238,37 @@ section {
 }
 
 /****
+** Film Custom
+**/
+
+.film-image {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+}
+
+.film-image-box {
+	margin: 10px;
+}
+
+.film-image-box img {
+	width: 100%;
+	height: 200px;
+}
+
+.film-image-row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+/****
 ** Section Image 3
 **/
-.act{
+.act {
 	max-width: 50%;
 	width: auto;
 	display: block;
@@ -236,19 +276,18 @@ section {
   	margin-right: auto;
 }
 
-.main-page{
+.main-page {
 	margin: 10px auto;
 }
 
-.home{
+.home {
 	padding-right: 15px;
     padding-left: 15px;
 	margin-bottom: 40px;
 }
 
-.home a{
-
-	margin:20px;
+.home a {
+	margin: 20px;
 }
 
 .home:hover{
