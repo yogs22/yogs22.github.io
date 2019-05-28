@@ -76,6 +76,11 @@ section {
 	color: #ffffff;
 }
 
+.bg-blue {
+	background: #043f70;
+	color: #fff;
+}
+
 /****
 ** Header Class
 **/
@@ -93,6 +98,14 @@ section {
 
 .navbar-transparent {
 	background: transparent;
+}
+
+.navbar-absolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
 }
 
 .navbar-image {
@@ -134,12 +147,31 @@ section {
 	background-color: #ffffffe8!important;
 }
 
-.nav-img {
-    max-width: 70%;
+.nav-img, .nav-img-mini {
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.nav-img {
+	max-width: 170px;
+}
+
+.nav-img-mini {
+    max-width: 60px;
+}
+
+.nav-bb {
+	border-bottom: 2px solid transparent;
+}
+
+.nav-bb:hover {
+	border-bottom: 2px solid #fff;
+}
+
+.nav-item .nav-active {
+	border-bottom: 2px solid #fff;
 }
 
 /****
@@ -227,6 +259,66 @@ section {
 }
 
 /****
+** Film Custom
+**/
+
+.film-header {
+	width: 100%;
+	height: 100vh;
+}
+
+.film-header-image {
+	width: 100%;
+	height: 100%;
+}
+
+.film-header-overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.film-header-overlay-description {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.film-image {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+}
+
+.film-image-box {
+	margin: 10px;
+}
+
+.film-image-box img {
+	width: 100%;
+	height: 200px;
+}
+
+.film-image-row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.image-horizontal {
+	width: 100%;
+	height: 100%;
+}
+
+/****
 ** Section Image 3
 **/
 .act{
@@ -290,7 +382,7 @@ footer a {
 }
 .wedding-image-box img {
     max-width: 100%;
-    
+
 }
 
 /* == Video == */
@@ -320,7 +412,7 @@ div.page-number a{
 }
 
 div.page-number a:hover{
-	     color: #03448a;
+	color: #03448a;
     text-decoration: none;
 }
 
