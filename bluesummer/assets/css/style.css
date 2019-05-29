@@ -1,6 +1,5 @@
-
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	overflow-x: hidden;
 }
@@ -56,12 +55,16 @@ section {
 	font-weight: bold;
 }
 
+.border-blue {
+	border-bottom: 3px solid #043f70;
+}
+
 .width-full {
 	width: 100%;
 }
 
-.bg-grey {
-	background: #e2e2e2;
+.rounded {
+	border-radius: 10px !important;
 }
 
 /****
@@ -79,6 +82,14 @@ section {
 .bg-blue {
 	background: #043f70;
 	color: #fff;
+}
+
+.bg-grey {
+	background: #e2e2e2;
+}
+
+.bg-light-grey {
+	background: #f6f6f6;
 }
 
 /****

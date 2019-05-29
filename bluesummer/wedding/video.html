@@ -4,22 +4,22 @@
 	<title>Video - Blue Summer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/style.css?v=87989-">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-	
+
 	<script>!function(e){"undefined"==typeof module?this.charming=e:module.exports=e}(function(e,n){"use strict";n=n||{};var t=n.tagName||"span",o=null!=n.classPrefix?n.classPrefix:"char",r=1,a=function(e){for(var n=e.parentNode,a=e.nodeValue,c=a.length,l=-1;++l<c;){var d=document.createElement(t);o&&(d.className=o+r,r++),d.appendChild(document.createTextNode(a[l])),n.insertBefore(d,e)}n.removeChild(e)};return function c(e){for(var n=[].slice.call(e.childNodes),t=n.length,o=-1;++o<t;)c(n[o]);e.nodeType===Node.TEXT_NODE&&a(e)}(e),e});
 	</script>
-   
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </head>
 <body>
-	
+
 	<div class="logo-header">
 		<a href="#"><img class="left" src="/bluesummer/assets/img/logo putih/Bluesummer wedding logo putih.png" alt="Logo"></a>
 		<a href="#"><img class="right" src="/bluesummer/assets/img/logo putih/stripped.png" alt="Logo"></a>
@@ -72,7 +72,7 @@
 							<i class="fa fa-play-circle-o"></i>
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 			<div class="row">
@@ -177,26 +177,32 @@
 		</div>
 	</section>
 
-	<footer class="py-4 bg-gray footer-video">
+	<footer class="py-4 bg-blue">
 		<nav class="navbar navbar-expand-sm navbar-transparent">
 			<div class="container">
-				<img width="40px" src="/bluesummer/assets/img/logo putih/Bluesummer wedding logo putih.png" class="d-inline-block align-top navbar-image" alt="">
+				<img src="/bluesummer/assets/img/logo putih/Bluesummer wedding logo putih.png" class="d-inline-block align-top navbar-image" alt="">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarText">
 					<ul class="navbar-nav ml-auto mx-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="#">- About Us -</a>
+							<a class="nav-link" href="#">Releases</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">- Lorem Ipsum -</a>
+							<a class="nav-link" href="#">Artist</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">- Lorem Ipsum -</a>
+							<a class="nav-link" href="#">News</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">- Lorem Ipsum -</a>
+							<a class="nav-link" href="#">Video</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact Us</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav pull-sm-right">
@@ -222,9 +228,9 @@
     // The Slideshow class.
 class Slideshow {
     constructor(el) {
-        
+
         this.DOM = {el: el};
-      
+
         this.config = {
           slideshow: {
             delay: 3000,
@@ -233,24 +239,24 @@ class Slideshow {
             }
           }
         };
-        
+
         // Set the slideshow
         this.init();
-      
+
     }
     init() {
-      
+
       var self = this;
-      
+
       // Charmed title
       this.DOM.slideTitle = this.DOM.el.querySelectorAll('.slide-title');
       this.DOM.slideTitle.forEach((slideTitle) => {
         charming(slideTitle);
       });
-      
+
       // Set the slider
       this.slideshow = new Swiper (this.DOM.el, {
-          
+
           loop: true,
           autoplay: {
             delay: this.config.slideshow.delay,
@@ -259,7 +265,7 @@ class Slideshow {
           speed: 500,
           preloadImages: true,
           updateOnImagesReady: true,
-          
+
           // lazy: true,
           // preloadImages: false,
 
@@ -271,17 +277,17 @@ class Slideshow {
             clickableClass: 'slideshow-pagination-clickable',
             modifierClass: 'slideshow-pagination-',
             renderBullet: function (index, className) {
-              
+
               var slideIndex = index,
                   number = (index <= 8) ? '0' + (slideIndex + 1) : (slideIndex + 1);
-              
+
               var paginationItem = '<span class="slideshow-pagination-item">';
               paginationItem += '<span class="pagination-number"> - ' + number + '</span>';
               paginationItem = (index <= 8) ? paginationItem + '<span class="pagination-separator"><span class="pagination-separator-loader"></span></span>' : paginationItem;
               paginationItem += '</span>';
             $(".max-pagination").html('/0'+(index+1));
               return paginationItem;
-              
+
             },
           },
 
@@ -295,46 +301,46 @@ class Slideshow {
           scrollbar: {
             el: '.swiper-scrollbar',
           },
-        
+
           on: {
             init: function() {
               self.animate('next');
             },
           }
-        
+
         });
-      
+
         // Init/Bind events.
         this.initEvents();
-        
+
     }
     initEvents() {
-        
+
         this.slideshow.on('paginationUpdate', (swiper, paginationEl) => this.animatePagination(swiper, paginationEl));
         //this.slideshow.on('paginationRender', (swiper, paginationEl) => this.animatePagination());
 
         this.slideshow.on('slideNextTransitionStart', () => this.animate('next'));
-        
+
         this.slideshow.on('slidePrevTransitionStart', () => this.animate('prev'));
-            
+
     }
     animate(direction = 'next') {
-      
+
         // Get the active slide
         this.DOM.activeSlide = this.DOM.el.querySelector('.swiper-slide-active'),
         this.DOM.activeSlideImg = this.DOM.activeSlide.querySelector('.slide-image'),
         this.DOM.activeSlideTitle = this.DOM.activeSlide.querySelector('.slide-title'),
         this.DOM.activeSlideTitleLetters = this.DOM.activeSlideTitle.querySelectorAll('span');
-      
-        // Reverse if prev  
+
+        // Reverse if prev
         this.DOM.activeSlideTitleLetters = direction === "next" ? this.DOM.activeSlideTitleLetters : [].slice.call(this.DOM.activeSlideTitleLetters).reverse();
-      
+
         // Get old slide
         this.DOM.oldSlide = direction === "next" ? this.DOM.el.querySelector('.swiper-slide-prev') : this.DOM.el.querySelector('.swiper-slide-next');
         if (this.DOM.oldSlide) {
           // Get parts
           this.DOM.oldSlideTitle = this.DOM.oldSlide.querySelector('.slide-title'),
-          this.DOM.oldSlideTitleLetters = this.DOM.oldSlideTitle.querySelectorAll('span'); 
+          this.DOM.oldSlideTitleLetters = this.DOM.oldSlideTitle.querySelectorAll('span');
           // Animate
           this.DOM.oldSlideTitleLetters.forEach((letter,pos) => {
             TweenMax.to(letter, .3, {
@@ -345,7 +351,7 @@ class Slideshow {
             });
           });
         }
-      
+
         // Animate title
         this.DOM.activeSlideTitleLetters.forEach((letter,pos) => {
 					TweenMax.to(letter, .6, {
@@ -356,37 +362,37 @@ class Slideshow {
 						opacity: 1
 					});
 				});
-      
+
         // Animate background
         TweenMax.to(this.DOM.activeSlideImg, 1.5, {
             ease: Expo.easeOut,
             startAt: {x: direction === 'next' ? 200 : -200},
             x: 0,
         });
-      
+
         //this.animatePagination()
-    
+
     }
     animatePagination(swiper, paginationEl) {
-            
+
       // Animate pagination
       this.DOM.paginationItemsLoader = paginationEl.querySelectorAll('.pagination-separator-loader');
       this.DOM.activePaginationItem = paginationEl.querySelector('.slideshow-pagination-item.active');
       this.DOM.activePaginationItemLoader = this.DOM.activePaginationItem.querySelector('.pagination-separator-loader');
-      
+
       console.log(swiper.pagination);
       // console.log(swiper.activeIndex);
-      
+
       // Reset and animate
         TweenMax.set(this.DOM.paginationItemsLoader, {scaleX: 0});
         TweenMax.to(this.DOM.activePaginationItemLoader, this.config.slideshow.pagination.duration, {
           startAt: {scaleX: 0},
           scaleX: 1,
         });
-      
-      
+
+
     }
-    
+
 }
 
 const slideshow = new Slideshow(document.querySelector('.slideshow'));
