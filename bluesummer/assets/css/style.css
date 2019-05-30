@@ -327,6 +327,8 @@ section {
 .image-horizontal {
 	width: 100%;
 	height: 100%;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 /****
@@ -367,6 +369,10 @@ section {
 
 footer {
 	padding: 10px;
+}
+
+footer.bg-blue a:hover {
+	color: #fff;
 }
 
 .nav-foot{
