@@ -359,8 +359,9 @@ section {
     height: auto !important;
 }
 .orderby .ico.active {
-    background: #eee;
-    border-radius: 2px;
+	background: #6c6c6c;
+	border-radius: 2px;
+	color: #fff;
 }
 
 .orderby .ico {
