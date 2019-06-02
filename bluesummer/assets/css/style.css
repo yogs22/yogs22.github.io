@@ -341,6 +341,53 @@ section {
 	border-bottom-left-radius: 10px;
 }
 
+
+.film-header-bottom {
+    align-items: flex-end !important;
+    padding-bottom: 50px;
+}
+
+.film a{
+	text-decoration: none;
+}
+
+.orderby select {
+		width: auto !important;
+    display: -webkit-inline-box !important;
+    padding: 5px 0;
+    margin: 5px 0px;
+    height: auto !important;
+}
+.orderby .ico.active {
+    background: #eee;
+    border-radius: 2px;
+}
+
+.orderby .ico {
+    /* margin: 3px; */
+    padding: 5px;
+		cursor: pointer;
+}
+
+.film .minion{
+	background: none !important;
+	color: #eee;
+	top:10px !important;
+	bottom: unset;
+}
+.film .minion h2.judul {
+    color: #eee !important;
+    font-size: 7vh;
+}
+.film .icon-vid{
+	background: url(http://localhost/bluesummer/assets/img/Play.svg) no-repeat;
+	left: 45.5%;
+	position: absolute;
+	top: 35%;
+	height: 40px;
+	width: 40px;
+}
+
 /****
 ** Section Image 3
 **/
