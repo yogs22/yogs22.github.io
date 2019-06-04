@@ -814,7 +814,7 @@ div.page-number {
 div.page-number a{
 	margin: 0 5px;
     font-size: 4vh;
-    color: #eee;
+    color: #777;
 }
 
 div.page-number a:hover{
@@ -893,7 +893,7 @@ padding: 0 !important;
 
 .img-futured img{
 	border-radius: 10px;
-    max-width: 98%;
+    width: 100%;
     height: auto;
 }
 
