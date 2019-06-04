@@ -190,8 +190,10 @@ section {
 	width: 7%;
 }
 
-.navbar-image-wedding {
-	width: 5%;
+.footer-image-wedding {
+	width: 70px;
+	margin: auto;
+	display: block;
 }
 
 .nav-item {
@@ -476,6 +478,23 @@ section {
 
 .wedding-image-box img {
 	width: 100%;
+}
+
+.wedding-list {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wedding-list .wedding-list-item {
+	margin-right: 4rem !important;
+}
+
+.wedding-list a {
+	color: #262424;
 }
 
 /**
@@ -1126,6 +1145,9 @@ padding: 0 !important;
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
+	.mobile-hidden {
+		display: none;
+	}
 	.flex-wrap-media {
 		flex-wrap: wrap;
 	}
