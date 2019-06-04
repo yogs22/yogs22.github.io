@@ -346,11 +346,11 @@ section {
 
 .wedding-swiper-pagination .swiper-pagination-current::before {
 	content: '';
-	width: 20px;
-	height: 1px;
-	background: #fff;
+	width: 30px;
 	border: 2px solid #fff;
-	margin-right: 10px;
+	position: absolute;
+	top: 50%;
+	left: 45%;
 }
 
 .wedding-arrow-wrapper {
