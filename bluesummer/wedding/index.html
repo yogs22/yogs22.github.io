@@ -4,23 +4,110 @@
 	<title>Blue Summer - Wedding</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	 <link rel="icon" href="/bluesummer/assets/img/logo/Bluesummer Wedding.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/slick.css">
+	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/style.css">
+	<style media="screen">
+		.slick-center {
+			opacity: 1 !important;
+			transform: scale(1.2	);
+			transition: 0.3s ease-in-out;
+		}
+
+		.slick-slide {
+			opacity: 0.4;
+		}
+	</style>
 </head>
 <body>
 	<header class="wedding-header">
-		<img src="/bluesummer/assets/img/wedding/lievia boby/DSCF6556.JPG" class="wedding-header-image image-fit" alt="">
-		<div class="wedding-header-overlay text-white">
-			<div class="wedding-header-overlay-description text-left">
-				<div class="row">
-					<div class="col-md-3 offset-md-7">
-						<h1 class="font-weight-bold">Lievia & Bobby</h1>
-						<p class="description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						</p>
-						<a href="#" class="btn btn-outline-white px-5">View</a>
+		<nav class="navbar navbar-expand-sm navbar-transparent navbar-absolute">
+			<div class="container">
+				<a class="navbar-brand" href="#"><img src="/bluesummer/assets/img/logo putih/Bluesummer wedding logo putih.png" class="d-inline-block align-top nav-img-mini" alt=""></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarText">
+					<ul class="nav navbar-nav float-right">
+						<li class="nav-item">
+							<a class="nav-link nav-bb text-white nav-active" href="/bluesummer/film">Home</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="wedding-swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" id="slide1">
+					<img src="/bluesummer/assets/img/wedding/lievia boby/DSCF6556.JPG" class="wedding-header-image image-fit" alt="">
+					<div class="wedding-header-overlay text-white">
+						<div class="wedding-header-overlay-description text-left">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-5 offset-md-7">
+										<h1 class="font-weight-bold">Lievia & Bobby</h1>
+										<p class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lorem
+										</p>
+										<a href="#" class="btn btn-outline-white px-5">View</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide" id="slide2">
+					<img src="/bluesummer/assets/img/wedding/INDRI & YO NIIMI/DSCF7393.JPG" class="wedding-header-image image-fit" alt="">
+					<div class="wedding-header-overlay text-white">
+						<div class="wedding-header-overlay-description text-left">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-5 offset-md-7">
+										<h1 class="font-weight-bold">Indri & Yoo Nimi</h1>
+										<p class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										</p>
+										<a href="#" class="btn btn-outline-white px-5">View</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide" id="slide3">
+					<img src="/bluesummer/assets/img/wedding/bram & widya/DSCF5865.JPG" class="wedding-header-image image-fit" alt="">
+					<div class="wedding-header-overlay text-white">
+						<div class="wedding-header-overlay-description text-left">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-5 offset-md-7">
+										<h1 class="font-weight-bold">Bram & Widya</h1>
+										<p class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										</p>
+										<a href="#" class="btn btn-outline-white px-5">View</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="container text-center">
+				<div class="wedding-swiper-pagination"></div>
+			</div>
+		    <!-- Add Arrows -->
+			<div class="wedding-arrow-wrapper">
+				<div class="wedding-arrow-absolute">
+					<div class="container">
+						<img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-prev" class="wedding-swipper-button-prev float-left" style="transform: rotateY(170deg);">
+						<img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-next" class="wedding-swipper-button-next float-right">
 					</div>
 				</div>
 			</div>
@@ -29,15 +116,72 @@
 
 	<section id="work" class="bg-light-grey py-5">
 		<h3 class="section-title blue">Our Recents Works</h3> <br>
-		<div class="wedding-slideshow-container d-flex">
-			<div class="wedding-slide-work" style="margin-left: -100px;margin-right: 100px;opacity: 0.3">
-				<img src="/bluesummer/assets/img/wedding/lievia boby/DSCF6629.JPG" class="image-fit" alt="">
+		<div class="wedding-slideshow-container">
+			<div class="wedding-slide-work" id="slide-1">
+				<div class="wedding-slide-image">
+					<img src="/bluesummer/assets/img/wedding/lievia boby/DSCF6629.JPG" class="image-fit" alt="">
+					<div class="wedding-slide-overlay">
+						<div class="description">
+							<h4 class="font-weight-bold">Pre Wedding Films - Bram & Widya</h4>
+							<b>25 Mei 2019</b>
+						</div>
+						<img src="/bluesummer/assets/img/play.svg" class="play-image" alt="Play Video">
+					</div>
+				</div>
 			</div>
-			<div class="wedding-slide-work wedding-active-slide-work">
-				<img src="/bluesummer/assets/img/wedding/lievia boby/DSCF6322.JPG" class="image-fit" alt="">
+			<div class="wedding-slide-work" id="slide-2">
+				<div class="wedding-slide-image">
+					<img src="/bluesummer/assets/img/wedding/lievia boby/DSCF6322.JPG" class="image-fit" alt="">
+					<div class="wedding-slide-overlay">
+						<div class="description">
+							<h4 class="font-weight-bold">Pre Wedding Films - Yovi & Nuno</h4>
+							<b>25 November 2019</b>
+						</div>
+						<img src="/bluesummer/assets/img/play.svg" class="play-image" alt="Play Video">
+					</div>
+				</div>
 			</div>
-			<div class="wedding-slide-work" style="margin-right: -100px;margin-left: 100px;opacity: 0.3">
-				<img src="/bluesummer/assets/img/wedding/INDRI & YO NIIMI/DSC02861.JPG" class="image-fit" alt="">
+			<div class="wedding-slide-work" id="slide-3">
+				<div class="wedding-slide-image">
+					<img src="/bluesummer/assets/img/wedding/INDRI & YO NIIMI/DSC02861.JPG" class="image-fit" alt="">
+					<div class="wedding-slide-overlay">
+						<div class="description">
+							<h4 class="font-weight-bold">Pre Wedding Films - Yovi & Nuno</h4>
+							<b>25 November 2019</b>
+						</div>
+						<img src="/bluesummer/assets/img/play.svg" class="play-image" alt="Play Video">
+					</div>
+				</div>
+			</div>
+			<div class="wedding-slide-work" id="slide-4">
+				<div class="wedding-slide-image">
+					<img src="/bluesummer/assets/img/wedding/bram & widya/DSCF5119.JPG" class="image-fit" alt="">
+					<div class="wedding-slide-overlay">
+						<div class="description">
+							<h4 class="font-weight-bold">Pre Wedding Films - Yovi & Nuno</h4>
+							<b>25 November 2019</b>
+						</div>
+						<img src="/bluesummer/assets/img/play.svg" class="play-image" alt="Play Video">
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-prev" onclick="weddingPlusSlides(-1)" class="wedding-arrow-slideshow" style="transform: rotateY(170deg);">
+				</div>
+				<div class="col-md-6">
+					<div class="text-center">
+						<span class="wedding-dot-slideshow" onclick="weddingCurrentSlide(1)"></span>
+						<span class="wedding-dot-slideshow" onclick="weddingCurrentSlide(2)"></span>
+						<span class="wedding-dot-slideshow" onclick="weddingCurrentSlide(3)"></span>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-next" onclick="weddingPlusSlides(1)" class="wedding-arrow-slideshow float-right">
+				</div>
 			</div>
 		</div>
 	</section>
@@ -60,10 +204,26 @@
 			<div class="col-md-6 col-xs-12 wedding-team-padding">
 				<div class="row wedding-team-wrapper">
 					<div class="col-6 col-xs-12 wedding-team">
-						<img src="/bluesummer/assets/img/wedding/bakso square.png" alt="">
+						<div class="wedding-team-image">
+							<img src="/bluesummer/assets/img/wedding/bakso square.png" alt="Bakso">
+							<div class="wedding-team-border-overlay"></div>
+							<div class="wedding-team-image-overlay">
+								<h6 class="blue font-weight-bold mb-1">- Elvasa Rembrand -</h6>
+								<a href="https://instagram.com/bluesummerwedding" target="_blank">videographer</a> <br>
+								<i class="fa fa-instagram fa-lg mt-2"></i>
+							</div>
+						</div>
 					</div>
 					<div class="col-6 col-xs-12 wedding-team">
-						<img src="/bluesummer/assets/img/wedding/pempi square.png" alt="">
+						<div class="wedding-team-image">
+							<img src="/bluesummer/assets/img/wedding/pempi square.png" alt="">
+							<div class="wedding-team-border-overlay"></div>
+							<div class="wedding-team-image-overlay">
+								<h6 class="blue font-weight-bold mb-1">- Pempi Square -</h6>
+								<a href="https://instagram.com/bluesummerwedding" target="_blank">videographer</a> <br>
+								<i class="fa fa-instagram fa-lg mt-2"></i>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -73,7 +233,7 @@
 	<section id="socmed">
 		<center>
 			<span class="fa fa-instagram fa-lg"></span> <br>
-			<span>Follow us on instagram</span> <br>
+			<h4>Follow us on instagram</h4>
 			<a href="https://instagram.com/bluesummerwedding" target="_blank">@bluesummerwedding</a> <br><br>
 		</center>
 		<div class="wedding-image">
@@ -141,9 +301,65 @@
 			</div>
 		</nav>
 	</footer>
-	<div class="blue py-3 px-3">
-		<span class="ml-auto mx-auto">&copy; 2019 Bluesummer music | All Rights Reversed </span>
+	<div class="blue py-3 px-3 text-small font-size-13">
+		<span class="ml-auto mx-auto">&copy; 2019 Bluesummer Wedding | All Rights Reversed </span>
 		<span class="float-right">Designed by thirst creative</span>
 	</div>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/slick.js"></script>
+	<!-- <script type="text/javascript" src="/bluesummer/assets/js/script.js"></script> -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.wedding-slideshow-container').slick({
+				centerMode: true,
+				centerPadding: '200px',
+				slidesToShow: 1,
+				// autoplay: true,
+  				// autoplaySpeed: 2000,
+				responsive: [
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        arrows: false,
+			        centerMode: true,
+			        centerPadding: '40px',
+			        slidesToShow: 3
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        arrows: false,
+			        centerMode: true,
+			        centerPadding: '40px',
+			        slidesToShow: 1
+			      }
+			    }
+			  ]
+			});
+		});
+
+		// Swipper Slidder
+	    var swiper = new Swiper('.wedding-swiper-container', {
+	      slidesPerView: 1,
+	      spaceBetween: 30,
+		  parallax: true,
+		  effect: 'fade',
+	      loop: true,
+	      pagination: {
+	        el: '.wedding-swiper-pagination',
+	        clickable: true,
+			type: 'fraction',
+	      },
+	      navigation: {
+	        nextEl: '.wedding-swipper-button-next',
+	        prevEl: '.wedding-swipper-button-prev',
+	      },
+	    });
+	</script>
 </body>
 </html>
