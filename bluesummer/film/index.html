@@ -4,8 +4,10 @@
 	<title>Blue Summer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/aos.css">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/fonts/font-awesome/css/font-awesome.min.css">
 </head>
@@ -44,16 +46,87 @@
 				</div>
 			</div>
 		</nav>
-		<img src="/bluesummer/assets/img/film/SONGGO LANGIT.png" class="film-header-image image-fit" alt="">
-		<div class="film-header-overlay text-white">
-			<div class="film-header-overlay-description text-left">
-				<div class="row">
-					<div class="col-md-4 offset-md-6">
-						<h5 class="font-weight-bold">WE TAKE YOU TO OUR NEWEST VIDEO</h5>
-						<h1 class="font-weight-bold">`Songgo Langit`</h1>
-						<p class="description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						</p>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" id="slide1">
+					<div class="wedding-header-image">
+						<img src="/bluesummer/assets/img/film/SONGGO LANGIT.png" class="film-header-image image-fit" alt="">
+						<div class="film-header-overlay text-white parallax">
+							<div class="film-header-overlay-description text-left">
+								<div class="container">
+									<div class="row">
+										<div class="offset-md-5 col-md-1 d-flex">
+											<img src="/bluesummer/assets/img/play.svg" alt="Play Image">
+										</div>
+										<div class="col-md-6">
+											<h5 class="font-weight-bold" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">WE TAKE YOU TO OUR NEWEST VIDEO</h5>
+											<h1 class="font-weight-bold" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">'Songgo Langit'</h1>
+											<p class="description text-mutted" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide" id="slide2">
+					<div class="wedding-header-image">
+						<img src="/bluesummer/assets/img/film/DO YOU VESPA.png" class="film-header-image parallax image-fit" alt="">
+						<div class="film-header-overlay text-white">
+							<div class="film-header-overlay-description text-left">
+								<div class="container">
+									<div class="row">
+										<div class="offset-md-5 col-md-1 d-flex">
+											<img src="/bluesummer/assets/img/play.svg" alt="Play Image">
+										</div>
+										<div class="col-md-6">
+											<h5 class="font-weight-bold" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">WE TAKE YOU TO OUR NEWEST VIDEO</h5>
+											<h1 class="font-weight-bold" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">`ARE YOU VESPA`</h1>
+											<p class="description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide" id="slide3">
+					<div class="wedding-header-image">
+						<img src="/bluesummer/assets/img/film/LAQUENNA MUSIC VIDEO.png" class="film-header-image parallax image-fit" alt="">
+						<div class="film-header-overlay text-white">
+							<div class="film-header-overlay-description text-left">
+								<div class="container">
+									<div class="row">
+										<div class="offset-md-5 col-md-1 d-flex">
+											<img src="/bluesummer/assets/img/play.svg" alt="Play Image">
+										</div>
+										<div class="col-md-6">
+											<h1 class="font-weight-bold">AQUA MUSIC</h1>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="container">
+				<div class="swiper-pagination" data-aos="fade-right" data-aos-duration="500" data-aos-delay="500"></div>
+			</div>
+		    <!-- Add Arrows -->
+			<div class="film-arrow-wrapper">
+				<div class="film-arrow-absolute" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">
+					<div class="container">
+						<i class="fa fa-rounded fa-chevron-left film-button-prev"></i>
+						<i class="fa fa-rounded fa-chevron-right film-button-next ml-5"></i>
 					</div>
 				</div>
 			</div>
@@ -62,19 +135,20 @@
 
 	<section id="teams">
 		<div class="row mt-5">
-			<div class="col-md-4 offset-md-2 col-xs-12 p-team text-left" style="padding-top: 6em;">
+			<div class="col-md-4 offset-md-2 col-xs-12 p-team text-left mb-4" style="padding-top: 6em;">
 				<h3 class="blue font-weight-bold">Meet Our Teams</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 				<a href="#" class="btn btn-outline-primary">Learn More</a>
 			</div>
-			<div class="offset-md-1 col-md-5 col-xs-12 bg-light-grey pr-5 pb-3" style="padding-top: 6em;">
-				<img src="/bluesummer/assets/img/film/BEA CUKAI.png" class="image image-fit" style="margin-left: -120px;height: 290px" alt="">
+			<div class="offset-md-1 col-md-5 col-xs-12 bg-light-grey pr-5 pb-3 p-none" style="padding-top: 6em;">
+				<img src="/bluesummer/assets/img/film/bag.png" class="image image-fit image-team-left-minus" alt="">
 			</div>
 		</div>
 	</section>
 
 	<section id="works">
-		<h3 class="section-title blue">Our Latest Works</h3> <br>
+		<h3 class="section-title blue mb-3">Our Latest Works</h3>
+		<div class="section-line mb-5"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-xs-12">
@@ -110,12 +184,15 @@
 			<span class="fa fa-instagram fa-lg blue" style="font-size: 40px"></span> <br>
 			<h3 class="font-weight-bold blue">Follow us on instagram</h3>
 		</center>
-		<div class="film-image container">
+		<div class="film-image container flex-wrap-media">
 			<div class="film-image-box">
 				<img src="/bluesummer/assets/img/film/MANOHARA COMPANY PROFILE.png" class="image-fit rounded" alt="">
 			</div>
 			<div class="film-image-box">
 				<img src="/bluesummer/assets/img/film/ODGJ DOCUMENATRY.png" class="image-fit rounded" alt="">
+			</div>
+			<div class="film-image-box">
+				<img src="/bluesummer/assets/img/film/MANOHARA COMPANY PROFILE.png" class="image-fit rounded" alt="">
 			</div>
 			<div class="film-image-box">
 				<img src="/bluesummer/assets/img/film/MANOHARA COMPANY PROFILE.png" class="image-fit rounded" alt="">
@@ -176,5 +253,30 @@
 		<span class="ml-auto mx-auto">&copy; 2019 Bluesummer music | All Rights Reversed </span>
 		<span class="float-right">Designed by thirst creative</span>
 	</div>
+	<script type="text/javascript" src="/bluesummer/assets/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/aos.js"></script>
+	<script>
+	// AOS JS
+	AOS.init();
+	// Swipper Slidder
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+	  parallax: true,
+	  effect: 'fade',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+		type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.film-button-next',
+        prevEl: '.film-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>
