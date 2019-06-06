@@ -9,6 +9,10 @@ section {
 	width: 100%;
 }
 
+a:hover {
+	text-decoration: none !important;
+}
+
 .grey-header {
 	background: #e2e2e2;
 }
@@ -134,9 +138,17 @@ section {
 	border: 2px solid #043f70;
 }
 
+.bg-gray {
+    background: #e6e4e4 !important;
+}
+
 .bg-blue {
 	background: #043f70;
 	color: #fff;
+}
+
+.bg-blue a {
+	color: #fff !important;
 }
 
 .bg-nav-light-grey {
@@ -262,6 +274,7 @@ section {
 	width: 100%;
 }
 
+<<<<<<< HEAD
 .postingan .items{
 	color: #fff;
 	width: 90%;
@@ -323,6 +336,33 @@ section {
 .postingan:hover .post-btn, .postingan:hover .items{
 	opacity: 1;
 }
+=======
+.music-section-title {
+	position: relative;
+	margin: 20px 0;
+}
+
+.music-section-title::after {
+	content: '';
+	width: 100%;
+	position: absolute;
+	border: 2px solid #043f70;
+	top: 50%;
+	left: 0;
+	z-index: 1;
+}
+
+.music-title {
+	background: #fff;
+    z-index: 3;
+    padding: 0 20px 0 20px;
+    position: relative;
+	width: auto;
+	display: inline-block;
+}
+
+
+>>>>>>> b22caffa7cb425a1c1560a082e3fc4382300fddf
 /****
 ** Wedding Categories
 **/
@@ -887,26 +927,14 @@ div.page-number a:hover{
 	color: #03448a;
 }
 
-section#socmed{
-	padding: 0 !important;
-}
 .margin10{
 	padding: 40px 100px;
 }
-.footer-video a{
- font-size: 3vh;
-    color: #4e4c4c;
-}
-.footer-video nav, .footer-video .navbar{
-padding: 0 !important;
-}
-.bg-gray {
-    background: #e6e4e4;;
 
-}
 .futured{
 	margin-bottom: 10px;
 }
+
 .minion{
 	display: none;
 	background: #ffffff!important;
@@ -920,11 +948,6 @@ padding: 0 !important;
     bottom: 0;
     border-radius: 0 10px 0 0;
     width: auto;
-}
-
-.minion h2.judul{
-	color: #1e5e7e;
-    font-size: 7vh;
 }
 
 .icon-vid{
