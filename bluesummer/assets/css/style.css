@@ -274,7 +274,6 @@ a:hover {
 	width: 100%;
 }
 
-<<<<<<< HEAD
 .postingan .items{
 	color: #fff;
 	width: 90%;
@@ -336,7 +335,7 @@ a:hover {
 .postingan:hover .post-btn, .postingan:hover .items{
 	opacity: 1;
 }
-=======
+
 .music-section-title {
 	position: relative;
 	margin: 20px 0;
@@ -361,8 +360,6 @@ a:hover {
 	display: inline-block;
 }
 
-
->>>>>>> b22caffa7cb425a1c1560a082e3fc4382300fddf
 /****
 ** Wedding Categories
 **/
