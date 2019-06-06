@@ -274,6 +274,68 @@ a:hover {
 	width: 100%;
 }
 
+.postingan .items{
+	color: #fff;
+	width: 90%;
+	opacity: -1;
+	margin: auto;
+	display: block;
+	position: absolute;
+	top: 45%;
+	border-radius: 3px;
+}
+
+.postingan .post-title{
+	border-bottom: 2px solid #fff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.postingan .post-title::after{
+	width: 90%;
+	border: 1px solid #fff;
+}
+.postingan .post-subtitle{
+	text-align: center;
+	font-size: 13px;
+}
+
+.postingan img{
+	z-index: 10;
+}
+
+.postingan .post-btn{
+	opacity: -1;
+	padding: 5px 15px;
+	margin: auto;
+	display: block;
+	position: absolute;
+	top: 70%;
+	background: #fff;
+	left: 41%;
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+.postingan:hover{
+	transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+}
+.postingan:hover img{
+	border-radius: 0 !important;
+	transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+	opacity: .5;
+	z-index: 4;
+}
+
+.postingan:hover .post-btn, .postingan:hover .items{
+	opacity: 1;
+}
+
 .music-section-title {
 	position: relative;
 	margin: 20px 0;
@@ -297,7 +359,6 @@ a:hover {
 	width: auto;
 	display: inline-block;
 }
-
 
 /****
 ** Wedding Categories
