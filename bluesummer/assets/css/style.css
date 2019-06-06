@@ -38,7 +38,7 @@ a:hover {
 
 .image-600 {
 	width: 100%;
-	height: 609px;
+	height: 600px;
 }
 
 .image-team-left-minus {
@@ -306,6 +306,7 @@ a:hover {
 .wedding-header {
 	width: 100%;
 	height: 100vh;
+	position: relative;
 }
 
 .wedding-header-image {
@@ -333,6 +334,16 @@ a:hover {
 
 .wedding-header-overlay-description .description {
 	font-size: 14px;
+}
+
+/* == Show Navbar Wrapper == */
+.show-navbar-wrapper {
+	justify-content: center;
+	align-items: center;
+}
+
+.show-navbar .form-control {
+	border-bottom: 1px solid #001;
 }
 
 /*== Wedding Swipper Slideshow ==*/
@@ -658,6 +669,7 @@ a:hover {
 	height: 100%;
 	position: absolute;
 	top: 0;
+	background: rgba(26, 25, 25, 0.4);
 }
 
 .film-header-overlay-description {
@@ -712,7 +724,7 @@ a:hover {
 .film-arrow-absolute {
 	position: absolute;
 	width: 100%;
-	bottom: 90px;
+	bottom: 40px;
 	right: 24px;
 	text-align: right;
 	color: #fff;
@@ -724,12 +736,12 @@ a:hover {
     padding-bottom: 50px;
 }
 
-.film a{
+.film a {
 	text-decoration: none;
 }
 
 .orderby select {
-		width: auto !important;
+	width: auto !important;
     display: -webkit-inline-box !important;
     padding: 5px 0;
     margin: 5px 0px;
@@ -744,7 +756,7 @@ a:hover {
 .orderby .ico {
     /* margin: 3px; */
     padding: 5px;
-		cursor: pointer;
+	cursor: pointer;
 }
 
 .film .minion{
@@ -755,13 +767,15 @@ a:hover {
 }
 .film .minion h2.judul {
     color: #eee !important;
-    font-size: 7vh;
+    font-size: 2em;
+	font-weight: bold;
+	margin: 0;
 }
-.film .icon-vid{
-	background: url(http://localhost/bluesummer/assets/img/Play.svg) no-repeat;
-	left: 45.5%;
+.film .icon-vid {
+	background: url('../img/play.svg') no-repeat;
+	left: 50%;
 	position: absolute;
-	top: 35%;
+	top: 40%;
 	height: 40px;
 	width: 40px;
 }
@@ -888,11 +902,11 @@ div.page-number a:hover{
 
 .icon-vid{
 	display: none;
-   font-size: 7vh;
-   left: 46.555%;
-   position: absolute;
-   top: 50%;
-   color: #1e5e7e;
+    font-size: 2em;
+    left: 46.555%;
+    position: absolute;
+    top: 50%;
+    color: #1e5e7e;
 }
 
 .ico-md{
@@ -907,8 +921,8 @@ div.page-number a:hover{
 }
 
 .img-futured:hover img {
-    opacity: 0.5;
-  	filter: alpha(opacity=50); /* For IE8 and earlier */
+    opacity: 0.7;
+  	filter: alpha(opacity=70); /* For IE8 and earlier */
 }
 
 .img-futured img{
@@ -1134,18 +1148,6 @@ div.page-number a:hover{
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
-}
-
-/* .swiper-pagination-fraction {
-	color: #fff;
-	padding: 70px 130px;
-	font-weight: bold;
-	font-size: 22px;
-	text-align: left !important;
-} */
-
-.swiper-pagination-current {
-	font-size: 50px;
 }
 
 .swiper-button-next, .swiper-button-prev {

@@ -6,9 +6,23 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/aos.css">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/jquery.fancybox.css">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/fonts/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+	<style media="screen">
+		.swiper-pagination-fraction {
+			color: #fff;
+			font-weight: bold;
+			font-size: 22px;
+			text-align: left !important;
+		}
+
+		.swiper-pagination-current {
+			font-size: 50px;
+		}
+	</style>
 </head>
 <body>
 	<header class="film-header">
@@ -27,7 +41,7 @@
 							<a class="nav-link nav-bb text-white" href="/bluesummer/film/about.html">About Us</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link nav-bb text-white " href="/bluesummer/film/film.html">Films</a>
+							<a class="nav-link nav-bb text-white" href="/bluesummer/film/film.html">Films</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link nav-bb text-white nav-active" href="/bluesummer/film/commercial.html">Commercials</a>
@@ -45,16 +59,64 @@
 				</div>
 			</div>
 		</nav>
-		<img src="/bluesummer/assets/img/film/DO YOU VESPA.png" class="film-header-image image-fit" alt="">
-		<div class="film-header-overlay text-white">
-			<div class="film-header-overlay-description text-left film-header-bottom">
-				<div class="row">
-					<div class="offset-md-1 col-md-4">
-						<!-- <h5 class="font-weight-bold">WE TAKE YOU TO OUR NEWEST VIDEO</h5> -->
-						<h1 class="font-weight-bold">`DO YOU VESPA`</h1>
-						<p class="description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						</p>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" id="slide2">
+					<div class="wedding-header-image">
+						<img src="/bluesummer/assets/img/film/DO YOU VESPA.png" class="film-header-image parallax image-fit" alt="">
+						<div class="film-header-overlay text-white">
+							<div class="film-header-overlay-description text-left">
+								<div class="container">
+									<div class="row">
+										<div class="offset-md-5 col-md-1 d-flex">
+											<img src="/bluesummer/assets/img/play.svg" alt="Play Image">
+										</div>
+										<div class="col-md-6">
+											<h5 class="font-weight-bold">WE TAKE YOU TO OUR NEWEST VIDEO</h5>
+											<h1 class="font-weight-bold">`ARE YOU VESPA`</h1>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide" id="slide3">
+					<div class="wedding-header-image">
+						<img src="/bluesummer/assets/img/film/LAQUENNA MUSIC VIDEO.png" class="film-header-image parallax image-fit" alt="">
+						<div class="film-header-overlay text-white">
+							<div class="film-header-overlay-description text-left">
+								<div class="container">
+									<div class="row">
+										<div class="offset-md-5 col-md-1 d-flex">
+											<img src="/bluesummer/assets/img/play.svg" alt="Play Image">
+										</div>
+										<div class="col-md-6">
+											<h1 class="font-weight-bold">AQUA MUSIC</h1>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="container" style="position: relative">
+				<div class="swiper-pagination"></div>
+			</div>
+		    <!-- Add Arrows -->
+			<div class="film-arrow-wrapper">
+				<div class="film-arrow-absolute">
+					<div class="container">
+						<i class="fa fa-rounded fa-chevron-left film-button-prev"></i>
+						<i class="fa fa-rounded fa-chevron-right film-button-next ml-5"></i>
 					</div>
 				</div>
 			</div>
@@ -62,10 +124,10 @@
 	</header>
 
 	<section id="film">
-		<h3 class="section-title blue">Commercial</h3> <br>
+		<h3 class="section-title blue my-4">Commercial</h3>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-xs-12">
+				<div class="col-md-12 col-xs-12 mb-3">
 					<div class="orderby offset-md-10 col-md-2 text-right">
 						<i class="fa fa-th-large ico active"></i>
 						<i class="fa fa-th ico"></i>
@@ -78,61 +140,49 @@
 				<div class="col-md-6 col-xs-12">
 					<div class="film img-futured">
 						<a data-fancybox href="https://www.youtube.com/watch?v=eWoXgsXNoew"><img src="/bluesummer/assets/img/film/DO YOU VESPA.png" class="image rounded mb-4" alt="">
-						<div class="minion">
-							<span class="date">Magelang, April 2019</span>
-							<h2 class="judul">Layar Berbisik</h2>
-							<span class="sub-judul">Client: lorem ipsum</span>
-						</div>
-						<div class="overflay">
-						</div>
-						<div class="icon-vid">
-						</div>
+							<div class="minion">
+								<span class="date">Magelang, April 2019</span>
+								<h2 class="judul">Layar Berbisik</h2>
+								<span class="sub-judul">Client: lorem ipsum</span>
+							</div>
+							<div class="icon-vid"></div>
 						</a>
 					</div>
 				</div>
 				<div class="col-md-6 col-xs-12">
 					<div class="film img-futured">
 						<a data-fancybox href="https://www.youtube.com/watch?v=4Q70DYQUo2c"><img src="/bluesummer/assets/img/film/MANOHARA COMPANY PROFILE.png" class="image rounded mb-4" alt="">
-						<div class="minion">
-							<span class="date">Magelang, April 2019</span>
-							<h2 class="judul">Layar Berbisik</h2>
-							<span class="sub-judul">Client: lorem ipsum</span>
-						</div>
-						<div class="overflay">
-						</div>
-						<div class="icon-vid">
-						</div>
+							<div class="minion">
+								<span class="date">Magelang, April 2019</span>
+								<h2 class="judul">Layar Berbisik</h2>
+								<span class="sub-judul">Client: lorem ipsum</span>
+							</div>
+							<div class="icon-vid"></div>
 						</a>
 					</div>
 				</div>
 				<div class="col-md-6 col-xs-12">
 					<div class="film img-futured">
 						<a data-fancybox href="https://www.youtube.com/watch?v=eWoXgsXNoew"><img src="/bluesummer/assets/img/film/LAQUENNA MUSIC VIDEO.png" class="image rounded mb-4" alt="">
-						<div class="minion">
-							<span class="date">Magelang, April 2019</span>
-							<h2 class="judul">Layar Berbisik</h2>
-							<span class="sub-judul">Client: lorem ipsum</span>
-						</div>
-						<div class="overflay">
-						</div>
-						<div class="icon-vid">
-						</div>
+							<div class="minion">
+								<span class="date">Magelang, April 2019</span>
+								<h2 class="judul">Layar Berbisik</h2>
+								<span class="sub-judul">Client: lorem ipsum</span>
+							</div>
+							<div class="icon-vid"></div>
 						</a>
 					</div>
 				</div>
 				<div class="col-md-6 col-xs-12">
 					<div class="film img-futured">
 						<a data-fancybox href="https://www.youtube.com/watch?v=eWoXgsXNoew"><img src="/bluesummer/assets/img/film/ODGJ DOCUMENATRY.png" class="image rounded mb-4" alt="">
-						<div class="minion">
-							<span class="date">Magelang, April 2019</span>
-							<h2 class="judul">Layar Berbisik</h2>
-							<span class="sub-judul">Client: lorem ipsum</span>
+							<div class="minion">
+								<span class="date">Magelang, April 2019</span>
+								<h2 class="judul">Layar Berbisik</h2>
+								<span class="sub-judul">Client: lorem ipsum</span>
+							</div>
+							<div class="icon-vid"></div>
 						</div>
-						<div class="overflay">
-						</div>
-						<div class="icon-vid">
-						</div>
-					</div>
 					</a>
 				</div>
 			</div>
@@ -210,7 +260,7 @@
 							<a class="nav-link" href="#"><i class="fa fa-facebook fa-lg"></i></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+							<a class="nav-link" href="#"><i class="fa fa-youtube fa-lg"></i></a>
 						</li>
 					</ul>
 				</div>
@@ -223,7 +273,31 @@
 	</div>
 
 	<!-- JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/aos.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/jquery.fancybox.js"></script>
+	<script>
+	// AOS JS
+	AOS.init();
+	// Swipper Slidder
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+	  parallax: true,
+	  effect: 'fade',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+		type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.film-button-next',
+        prevEl: '.film-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>
