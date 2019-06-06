@@ -397,14 +397,85 @@ a:hover {
 	font-size: 14px;
 }
 
+.wedding-wrapper {
+	width: 120%;
+	position: relative;
+	transition: 0.4s ease-in;
+	-webkit-transition: 0.4s ease-in;
+	-moz-transition: 0.4s ease-in;
+	-ms-transition: 0.4s ease-in;
+	-o-transition: 0.4s ease-in;
+}
+
+.wedding-content {
+	width: 84%;
+	display: inline-block;
+	float: left;
+	margin-right: 25px;
+}
+
+.wedding-sidebar {
+	width: 16%;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	text-align: right;
+}
+
 /* == Show Navbar Wrapper == */
-.show-navbar-wrapper {
+.wedding-show-navbar {
+	background: #fff;
+	width: 100%;
+	height: 130px;
+	margin-top: -130px;
+	transition: 0.4s ease-in;
+	-webkit-transition: 0.4s ease-in;
+	-moz-transition: 0.4s ease-in;
+	-ms-transition: 0.4s ease-in;
+	-o-transition: 0.4s ease-in;
+}
+
+.wedding-show-navbar-wrapper {
 	justify-content: center;
 	align-items: center;
 }
 
-.show-navbar .form-control {
-	border-bottom: 1px solid #001;
+.wedding-show-navbar .form-control {
+	border: none;
+	border-bottom: 2px solid #5d5555;
+	border-radius: 0;
+	padding-left: 0;
+	padding-right: 40px;
+}
+
+.wedding-show-navbar .form-control:focus {
+	box-shadow: none;
+	z-index: 0;
+}
+
+.wedding-show-navbar .input-group-btn {
+	position: absolute;
+	right: 0;
+}
+
+.wedding-show-navbar .input-group-btn .btn {
+	background: transparent;
+}
+
+.wedding-close-navbar {
+	width: 20px;
+	cursor: pointer;
+}
+
+.wedding-sidebar .sidebar ul {
+	list-style: none;
+	color: #5d5555;
+	font-weight: bold;
+}
+
+.wedding-sidebar .sidebar ul li {
+	margin-bottom: 30px;
+	font-size: 20px;
 }
 
 /*== Wedding Swipper Slideshow ==*/
@@ -437,6 +508,7 @@ a:hover {
 	width: 50px;
 	cursor: pointer;
 	color: #fff;
+	filter: brightness(0) invert(1);
 }
 
 .wedding-swiper-pagination {
@@ -832,7 +904,7 @@ a:hover {
 	font-weight: bold;
 	margin: 0;
 }
-.film .icon-vid {
+.icon-vid {
 	background: url('../img/play.svg') no-repeat;
 	left: 50%;
 	position: absolute;
@@ -946,10 +1018,10 @@ div.page-number a:hover{
 	margin-bottom: 10px;
 }
 
-.minion{
-	display: none;
-	background: #ffffff!important;
-    color: #989898;
+.minion {
+	opacity: 0;
+	background: #ffffff !important;
+    color: #5d5555;
     font-weight: 400;
     height: auto;
     line-height: normal;
@@ -959,10 +1031,23 @@ div.page-number a:hover{
     bottom: 0;
     border-radius: 0 10px 0 0;
     width: auto;
+	transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	-ms-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
 }
 
-.icon-vid{
-	display: none;
+.minion span {
+	font-size: 13px;
+}
+
+.minion .judul {
+	margin-bottom: 0;
+}
+
+.icon-vid {
+	opacity: 0;
     font-size: 2em;
     left: 46.555%;
     position: absolute;
@@ -978,7 +1063,7 @@ div.page-number a:hover{
 	margin-bottom: 15px;
 }
 .img-futured:hover .minion, .img-futured:hover .icon-vid {
-	display: block;
+	opacity: 1;
 }
 
 .img-futured:hover img {
@@ -986,10 +1071,15 @@ div.page-number a:hover{
   	filter: alpha(opacity=70); /* For IE8 and earlier */
 }
 
-.img-futured img{
+.img-futured img {
 	border-radius: 10px;
     width: 100%;
     height: auto;
+	transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	-ms-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
 }
 
 .logo-header img.left{
