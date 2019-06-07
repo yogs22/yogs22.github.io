@@ -1134,7 +1134,12 @@ div.page-number a:hover{
 	-ms-transition: 0.2s ease-in;
 	-o-transition: 0.2s ease-in;
 }
-
+.minion.sm-text, .minion.sm-text span {
+    font-size: 10px;
+}
+.sm-ico{
+	top:35% !important;
+}
 .minion span {
 	font-size: 13px;
 }
