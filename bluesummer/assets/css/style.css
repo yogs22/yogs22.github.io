@@ -57,6 +57,11 @@ a:hover {
 	font-size: 13px;
 }
 
+.btn-white {
+	background: #fff;
+	color: #043f70;
+}
+
 .btn-outline-white {
 	color: #fff;
 	background-color: transparent;
@@ -127,7 +132,7 @@ a:hover {
 **/
 
 .blue {
-	color: #043f70;
+	color: #043f70 !important;
 }
 
 .white {
@@ -270,11 +275,117 @@ a:hover {
 ** Music Categories
 **/
 
-.header-image {
+.music-header-image {
 	width: 100%;
+	height: 105vh;
 }
 
-.postingan .overlay-desc{
+.music-slideshow-container .music-slideshow {
+	position: relative;
+	width: 560px !important;
+	height: 550px;
+	border-radius: 100%;
+	margin: 0 20px;
+	display: flex;
+	flex: 0 0 150px;
+	justify-content: center;
+	overflow: hidden;
+	transition: 0.3s ease-in;
+	-webkit-transition: 0.3s ease-in;
+	-moz-transition: 0.3s ease-in;
+	-ms-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
+	transform: none;
+	-webkit-transform: none;
+}
+
+.slick-current .music-slideshow-container .music-slideshow {
+	border: 3px solid black;
+}
+
+.music-slideshow-container .music-slideshow .music-slideshow-image {
+	width: 100%;
+	height: 100%;
+}
+
+.music-slideshow .music-slideshow-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+}
+
+.slick-active .music-slideshow:hover .music-slideshow-overlay {
+	opacity: 1;
+}
+
+.music-slideshow .music-slideshow-title {
+	font-weight: bold;
+	border-bottom: 2px solid #fff;
+	width: auto;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+.music-slide-current {
+	transform: none !important;
+	-webkit-transform: none !important;
+	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+}
+
+.music-prev-rotate {
+	transform: rotate(-40deg);
+	-webkit-transform: rotate(-40deg);
+	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+}
+
+.music-next-rotate {
+	transform: rotate(40deg);
+	-webkit-transform: rotate(40deg);
+	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+}
+
+.music-arrow-slideshow {
+	width: 80px;
+	cursor: pointer;
+}
+
+.music-play-ico {
+	border-radius: 50%;
+	background: white;
+	color: #043f70;
+	padding: 15px 17px;
+	cursor: pointer;
+}
+
+.posts .overlay-desc {
 	background: rgba(0, 0, 0, 0.7);
     top: 0;
     margin: 0px 33px;
@@ -292,7 +403,7 @@ a:hover {
     -o-transition: 0.5s all;
 }
 
-.postingan .items{
+.posts .items {
 	color: #fff;
 	width: 100%;
 	opacity: -1;
@@ -303,27 +414,27 @@ a:hover {
 	border-radius: 3px;
 }
 
-.postingan .post-title{
+.posts .post-title {
 	border-bottom: 2px solid #fff;
     text-align: center;
     font-size: 15px;
     font-weight: bold;
 }
 
-.postingan .post-title::after{
+.posts .post-title::after {
 	width: 90%;
 	border: 1px solid #fff;
 }
-.postingan .post-subtitle{
+.posts .post-subtitle {
 	text-align: center;
 	font-size: 13px;
 }
 
-.postingan img{
+.posts img {
 	z-index: 10;
 }
 
-.postingan .post-btn{
+.posts .post-btn {
 	opacity: -1;
 	padding: 5px 20px;
 	margin: auto;
@@ -336,12 +447,12 @@ a:hover {
 	text-decoration: none;
 }
 
-.postingan:hover{
+.posts:hover {
 	transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
 }
-.postingan:hover img{
+.posts:hover img {
 	border-radius: 0 !important;
 	transition: all .5s;
     -webkit-transition: all .5s;
@@ -350,11 +461,11 @@ a:hover {
 	z-index: 4;
 }
 
-.postingan:hover .post-btn, .postingan:hover .items, .postingan:hover .overlay-desc, .artist:hover .post-btn, .artist:hover .items, .artist:hover .overlay-desc{
+.posts:hover .post-btn, .posts:hover .items, .posts:hover .overlay-desc, .artist:hover .post-btn, .artist:hover .items, .artist:hover .overlay-desc {
 	opacity: 1;
 }
 
-.artist .overlay-desc{
+.artist .overlay-desc {
 	background: rgba(0, 0, 0, 0.7);
     top: 0;
     left: 0;
@@ -371,7 +482,7 @@ a:hover {
     -o-transition: 0.2s all;
 }
 
-.artist .items{
+.artist .items {
 	color: #fff;
 	width: 100%;
 	opacity: -1;
@@ -382,7 +493,7 @@ a:hover {
 	border-radius: 3px;
 }
 
-.artist .post-title{
+.artist .post-title {
 	width: 22%;
     border-bottom: 2px solid #fff;
     text-align: left;
@@ -391,21 +502,21 @@ a:hover {
     margin: 0 20px;
 }
 
-.artist .post-title::after{
+.artist .post-title::after {
 	width: 90%;
 	border: 1px solid #fff;
 }
-.artist .post-subtitle{
+.artist .post-subtitle {
 	text-align: left;
 	font-size: 13px;
 	margin: 0 20px;
 }
 
-.artist img{
+.artist img {
 	z-index: 10;
 }
 
-.artist .post-btn{
+.artist .post-btn {
 	opacity: -1;
     padding: 5px 20px;
     margin: auto;
@@ -418,12 +529,13 @@ a:hover {
     text-decoration: none;
 }
 
-.artist:hover{
+.artist:hover {
 	transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
 }
-.artist:hover img{
+
+.artist:hover img {
 	border-radius: 0 !important;
 	transition: all .5s;
     -webkit-transition: all .5s;
@@ -431,7 +543,6 @@ a:hover {
 	opacity: .5;
 	z-index: 4;
 }
-
 
 .music-section-title {
 	position: relative;
@@ -878,22 +989,6 @@ a:hover {
 	to {opacity: 1}
 }
 
-.wedding-dot-slideshow {
-	cursor: pointer;
-	height: 10px;
-	width: 10px;
-	margin: 0 5px;
-	background: transparent;
-	border: 1px solid #043f70;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-}
-
-.wedding-dot-slideshow-active, .wedding-dot-slideshow:hover {
-    background-color: #043f70;
-}
-
 .wedding-arrow-slideshow {
 	width: 30px;
 	cursor: pointer;
@@ -1167,12 +1262,16 @@ div.page-number a:hover{
 	margin-bottom: 0;
 }
 
+.play-slide-image {
+	width: 100%;
+}
+
 .icon-vid {
 	opacity: 0;
     font-size: 2em;
-    left: 46.555%;
+    left: 50%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     color: #1e5e7e;
 }
 
