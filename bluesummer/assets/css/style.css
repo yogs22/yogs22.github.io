@@ -457,6 +457,25 @@ a:hover {
 	display: inline-block;
 }
 
+.allartist .judul {
+	position: absolute;
+	top: 85%;
+	left: 37%;
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	opacity: -1;
+	transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+}
+
+.allartist:hover .wedding-team-border-overlay, .allartist:hover .judul{
+	opacity: 1;
+	transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+}
 /****
 ** Wedding Categories
 **/
