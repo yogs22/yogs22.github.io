@@ -17,3 +17,23 @@ $('.wedding-close-navbar').click(function(event) {
     $('.wedding-wrapper').css('margin-left', '0');
     $('.wedding-show-navbar').css('margin-top', '-130px');
 });
+
+// Playing Music
+$('#music').click(function(e) {
+    e.preventDefault();
+    alert('anj')
+    var song = $(this).next('audio').get(0);
+    console.log(song);
+    if (song.paused) {
+        song.play();
+    } else {
+        song.pause();
+    }
+});
+
+
+var audio = '';
+function playAudio(music, id) {
+    var audio = new Audio(music);
+    playingMusic(audio, id);
+}
