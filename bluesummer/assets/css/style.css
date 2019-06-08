@@ -432,6 +432,10 @@ a:hover {
 
 .posts img {
 	z-index: 10;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
 }
 
 .posts .post-btn {
