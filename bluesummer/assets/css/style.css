@@ -1256,7 +1256,8 @@ div.page-number a:hover{
     font-size: 10px;
 }
 .sm-ico{
-	top:35% !important;
+	top: 35% !important;
+    left: 44% !important;
 }
 .minion span {
 	font-size: 13px;
