@@ -432,6 +432,10 @@ a:hover {
 
 .posts img {
 	z-index: 10;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
 }
 
 .posts .post-btn {
@@ -568,6 +572,25 @@ a:hover {
 	display: inline-block;
 }
 
+.allartist .judul {
+	position: absolute;
+	top: 85%;
+	left: 37%;
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	opacity: -1;
+	transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+}
+
+.allartist:hover .wedding-team-border-overlay, .allartist:hover .judul{
+	opacity: 1;
+	transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+}
 /****
 ** Wedding Categories
 **/
@@ -1229,7 +1252,13 @@ div.page-number a:hover{
 	-ms-transition: 0.2s ease-in;
 	-o-transition: 0.2s ease-in;
 }
-
+.minion.sm-text, .minion.sm-text span {
+    font-size: 10px;
+}
+.sm-ico{
+	top: 35% !important;
+    left: 44% !important;
+}
 .minion span {
 	font-size: 13px;
 }
