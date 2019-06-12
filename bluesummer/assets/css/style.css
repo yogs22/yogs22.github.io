@@ -1200,14 +1200,12 @@ a:hover {
   	margin-right: auto;
 }
 
-.home {
-	padding-right: 15px;
-    padding-left: 15px;
-	margin-bottom: 40px;
-}
-
 .main-page .btn {
 	padding: 6px 36px;
+}
+
+.main-page a:hover {
+	color: #fff;
 }
 
 /****
