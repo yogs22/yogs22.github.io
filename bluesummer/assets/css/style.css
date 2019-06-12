@@ -533,6 +533,21 @@ a:hover {
     text-decoration: none;
 }
 
+.artist-overlay {
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+	/* left: 3%; */
+	border: 3px solid #fff;
+	width: 99%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+}
+
 .artist:hover {
 	transition: all .5s;
     -webkit-transition: all .5s;
@@ -573,6 +588,7 @@ a:hover {
 }
 
 .allartist .judul {
+	z-index: 2;
 	position: absolute;
 	top: 85%;
 	left: 37%;
@@ -585,7 +601,17 @@ a:hover {
     -moz-transition: all .5s;
 }
 
-.allartist:hover .wedding-team-border-overlay, .allartist:hover .judul{
+.allartist .wedding-team-border-overlay{
+	top: 3%;
+    left: 5%;
+    border: 3px solid #fff;
+    width: 92%;
+    height: 94%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.allartist:hover .wedding-team-border-overlay, .allartist:hover .judul, .allartist:hover .artist-overlay{
 	opacity: 1;
 	transition: all .5s;
     -webkit-transition: all .5s;
@@ -1256,6 +1282,16 @@ div.page-number {
     text-align: center;
     width: 61%;
     margin: auto;
+}
+
+div.page-number.center-nav .center-prev-nav, div.page-number.center-nav .center-next-nav{
+	width: 30px;
+	margin: 0 50px;
+}
+
+div.page-number.center-nav{
+	display: flex !important;
+	justify-content: center;
 }
 
 div.page-number a{
