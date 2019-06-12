@@ -12,14 +12,14 @@
 	<div class="row">
 		<div class="sidebar-column">
 			<aside class="home-sidebar">
-				<div class="sidebar-item">
-					<a href="/bluesummer/wedding" class=""><img src="/bluesummer/assets/img/logo/Bluesummer Wedding@2x.png" class="act" alt=""></a>
+				<div class="sidebar-item" onclick="showContent('#wedding-content')">
+					<a href="javascript:void(0);"><img src="/bluesummer/assets/img/logo/Bluesummer Wedding@2x.png" class="act" alt=""></a>
 				</div>
-				<div class="sidebar-item">
-					<a href="/bluesummer/film" class=""><img src="/bluesummer/assets/img/logo/Films@2x.png" class="act" alt=""></a>
+				<div class="sidebar-item" onclick="showContent('#film-content')">
+					<a href="javascript:void(0);"><img src="/bluesummer/assets/img/logo/Films@2x.png" class="act" alt=""></a>
 				</div>
-				<div class="sidebar-item border-none">
-					<a href="/bluesummer/music" class=""><img src="/bluesummer/assets/img/logo/Music@2x.png" class="act" alt=""></a>
+				<div class="sidebar-item border-none" onclick="showContent('#music-content')">
+					<a href="javascript:void(0);"><img src="/bluesummer/assets/img/logo/Music@2x.png" class="act" alt=""></a>
 				</div>
 			</aside>
 		</div>
@@ -28,13 +28,13 @@
 				<header class="">
 					<nav class="navbar navbar-expand-md">
 						<div class="mx-auto order-0">
-							<a class="navbar-brand mx-auto" href="#"><img class="nav-img" src="/bluesummer/assets/img/logo/Layer 1.png"></a>
+							<a class="navbar-brand mx-auto" href=""><img class="nav-img" src="/bluesummer/assets/img/logo/Layer 1.png"></a>
 						</div>
 					</nav>
 				</header>
 
 				<section class="container main-page">
-					<div id="wedding-content">
+					<div id="wedding-content" class="active-content">
 						<div class="row">
 							<div class="col-md-6 border-right-blue text-center">
 								<div class="container d-flex justify-content-center align-items-center flex-wrap p-5">
@@ -53,7 +53,53 @@
 							</div>
 						</div>
 						<div class="text-center mt-5">
-							<a href="#" class="btn btn-blue">Enter</a>
+							<a href="/bluesummer/wedding" class="btn btn-blue">Enter</a>
+						</div>
+					</div>
+
+					<div id="music-content">
+						<div class="row">
+							<div class="col-md-6 border-right-blue text-center">
+								<div class="container d-flex justify-content-center align-items-center flex-wrap p-5">
+									<div class="">
+										<img src="/bluesummer/assets/img/logo/Music@2x.png" class="home-image-logo mb-4" alt="BlueSummer Music Logo">
+									</div>
+									<div class="">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 text-center">
+								<div class="container d-flex justify-content-center align-items-center flex-wrap p-5">
+									<img src="/bluesummer/assets/img/music/DSCF5721.jpg" class="home-image-content" alt="BlueSummer Music">
+								</div>
+							</div>
+						</div>
+						<div class="text-center mt-5">
+							<a href="/bluesummer/wedding" class="btn btn-blue">Enter</a>
+						</div>
+					</div>
+
+					<div id="film-content">
+						<div class="row">
+							<div class="col-md-6 border-right-blue text-center">
+								<div class="container d-flex justify-content-center align-items-center flex-wrap p-5">
+									<div class="">
+										<img src="/bluesummer/assets/img/logo/Films@2x.png" class="home-image-logo mb-4" alt="BlueSummer Film Logo">
+									</div>
+									<div class="">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 text-center">
+								<div class="container d-flex justify-content-center align-items-center flex-wrap p-5">
+									<img src="/bluesummer/assets/img/film/DO YOU VESPA.png" class="home-image-content" alt="BlueSummer Film">
+								</div>
+							</div>
+						</div>
+						<div class="text-center mt-5">
+							<a href="/bluesummer/film" class="btn btn-blue">Enter</a>
 						</div>
 					</div>
 				</section>
@@ -72,6 +118,7 @@
 			</footer>
 		</div>
 	</div>
-
+	<script type="text/javascript" src="/bluesummer/assets/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/script.js"></script>
 </body>
 </html>

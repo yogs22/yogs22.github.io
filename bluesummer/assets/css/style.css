@@ -1234,6 +1234,10 @@ a:hover {
 	color: #fff;
 }
 
+#film-content, #music-content {
+	display: none;
+}
+
 /****
 ** Footer Class
 **/
@@ -1306,7 +1310,7 @@ div.page-number a:hover{
 }
 
 .page{
-	
+
 }
 
 .page a{
