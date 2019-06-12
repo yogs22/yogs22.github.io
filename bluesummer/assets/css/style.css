@@ -1284,7 +1284,7 @@ div.page-number {
     margin: auto;
 }
 
-div.page-number.center-nav .center-prev-nav, div.page-number.center-nav .center-next-nav{
+div.page-number.center-nav .center-prev-nav, div.page-number.center-nav .center-next-nav, .arrow-nav{
 	width: 30px;
 	margin: 0 50px;
 }
@@ -1303,6 +1303,10 @@ div.page-number a{
 div.page-number a:hover{
 	color: #03448a;
     text-decoration: none;
+}
+
+.page{
+	
 }
 
 .page a{
