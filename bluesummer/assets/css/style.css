@@ -679,6 +679,47 @@ a:hover {
 	text-align: right;
 }
 
+.wedding-single-wrapper {
+	position: relative;
+}
+
+.weddong-arrow-single img {
+	position: absolute;
+	top: 30%;
+}
+
+.wedding-single-overlay {
+	position: absolute;
+	height: 100%;
+	z-index: 2;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	background: #fff;
+	transition: 0.3s ease-in;
+	-webkit-transition: 0.3s ease-in;
+	-moz-transition: 0.3s ease-in;
+	-ms-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
+}
+
+.wedding-single-overlay .description {
+	position: absolute;
+	padding: 20px;
+	bottom: 0;
+}
+
+.wedding-single-overlay .description p {
+	margin: 0;
+	color: #000;
+	font-size: 13px;
+}
+
+.wedding-single-wrapper:hover .wedding-single-overlay {
+	opacity: 0.8;
+}
+
 /* == Show Navbar Wrapper == */
 .wedding-show-navbar {
 	background: #fff;
