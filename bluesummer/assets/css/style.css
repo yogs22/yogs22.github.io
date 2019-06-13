@@ -1672,7 +1672,22 @@ div.page-number a:hover{
 }
 
 @media screen  and (max-width: 979px) /* Tablet */ {
+	.sidebar-column {
+		width: 20%;
+	}
 
+	.content-column {
+		width: 80%;
+	}
+
+	.border-right-blue {
+		border-right: none;
+		border-bottom: 2px solid #043f70;
+	}
+
+	.home-sidebar {
+		height: 110vh;
+	}
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
@@ -1731,5 +1746,8 @@ div.page-number a:hover{
 
 	.p-none {
 		padding: 15px !important;
+	}
+	.act {
+		max-width: 100%;
 	}
 }
