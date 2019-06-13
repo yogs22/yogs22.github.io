@@ -1676,6 +1676,48 @@ div.page-number a:hover{
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
+	#navbarFooter{
+		display: block !important;
+		text-align: center;
+	}
+	#navbarSosmed{
+		display: block !important;
+	}
+	#navbarSosmed ul{
+		flex-direction: row !important;
+	}
+	#navbarSosmed ul li{
+		margin: auto;
+	}
+	.nav-img-mini {
+	    margin-left: 28px;
+	}
+	.film-header {
+	    height: 70vh !important;
+	}
+	.ml-5{
+		margin-left: 1rem!important;
+	}
+	.film-arrow-absolute {
+	    bottom: 30px !important;
+	}
+	.film-image{
+		display: block !important;
+	}
+	.swiper-pagination{
+		margin: 0 20px;
+	}
+	span.page-prev{
+		width: 18% !important;
+		margin: 10px 0;
+	}
+	span.page-next {
+	    margin: 10px 10px !important;
+	}
+	.film-header-overlay img.play-slide-image{
+		width: 70px;
+		margin: 10px auto;
+	}
 	.mobile-hidden {
 		display: none;
 	}
