@@ -1664,6 +1664,16 @@ div.page-number a:hover{
 }
 
 /***
+** background mobile navbar
+**/
+
+.nav-mobile-bg {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+	margin-right: 3px;
+}
+
+/***
 ** Media Querys for Responsive
 **/
 
