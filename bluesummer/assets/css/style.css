@@ -1688,6 +1688,14 @@ div.page-number a:hover{
 	.home-sidebar {
 		height: 110vh;
 	}
+	span.page-prev{
+		margin: 10px 0;
+		font-size: 2em;
+	}
+	span.page-next {
+	    margin: 10px 10px;
+		font-size: 2em;
+	}
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
