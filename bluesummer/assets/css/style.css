@@ -1660,6 +1660,16 @@ div.page-number a:hover{
 }
 
 /***
+** background mobile navbar
+**/
+
+.nav-mobile-bg {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+	margin-right: 3px;
+}
+
+/***
 ** Media Querys for Responsive
 **/
 
@@ -1703,6 +1713,13 @@ div.page-number a:hover{
 
 	.navbar-wedding {
 		padding: 20px 0 !important;
+	span.page-prev{
+		margin: 10px 0;
+		font-size: 2em;
+	}
+	span.page-next {
+	    margin: 10px 10px;
+		font-size: 2em;
 	}
 }
 
