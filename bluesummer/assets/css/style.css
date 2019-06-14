@@ -664,6 +664,10 @@ a:hover {
 	-o-transition: 0.4s ease-in;
 }
 
+.wedding-wrapper-margin {
+	margin-left: -31%;
+}
+
 .wedding-content {
 	width: 84%;
 	display: inline-block;
@@ -1713,10 +1717,10 @@ div.page-number a:hover{
 
 	.navbar-wedding {
 		padding: 20px 0 !important;
-	span.page-prev{
 		margin: 10px 0;
 		font-size: 2em;
 	}
+
 	span.page-next {
 	    margin: 10px 10px;
 		font-size: 2em;
@@ -1791,5 +1795,26 @@ div.page-number a:hover{
 	.wedding-list {
 		display: block;
 		margin: 20px 0;
+	}
+
+	.wedding-show-navbar {
+		padding: 5px !important;
+	}
+
+	.wedding-wrapper-margin {
+		margin-left: -101%;
+	}
+
+	.wedding-content {
+		margin-right: 0;
+	}
+
+	.wedding-sidebar {
+		width: 100%;
+		text-align: left;
+	}
+
+	.navbar-wedding-socmed {
+		margin-left: 21px;
 	}
 }
