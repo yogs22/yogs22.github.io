@@ -1817,4 +1817,31 @@ div.page-number a:hover{
 	.navbar-wedding-socmed {
 		margin-left: 21px;
 	}
+
+	.wedding-image-col {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+
+	.wedding-pagin div.page-number.center-nav .center-prev-nav,
+	.wedding-pagin div.page-number.center-nav .center-next-nav,
+	.wedding-pagin .arrow-nav {
+		margin: 0;
+	}
+
+	.wedding-pagin div.page-number {
+		width: 100%;
+	}
+
+	.wedding-pagin span.page-next {
+		width: 100%;
+		margin: 0 !important;
+		font-size: 1.8em;
+	}
+
+	.wedding-header-overlay-description .description {
+		width: 80%;
+		margin: auto;
+	}
 }

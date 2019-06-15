@@ -78,12 +78,10 @@
 	<div class="wedding-wrapper">
 		<div class="wedding-content">
 			<header class="wedding-header">
-				<nav class="navbar navbar-expand-sm navbar-transparent navbar-absolute">
+				<nav class="navbar navbar-wedding navbar-expand-sm navbar-transparent navbar-absolute">
 					<div class="container">
 						<a class="navbar-brand" href="/bluesummer/wedding"><img src="/bluesummer/assets/img/logo putih/Bluesummer wedding logo putih.png" class="d-inline-block align-top nav-img-mini" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
+						<a class="nav-link d-block d-sm-none" href="#"><img src="/bluesummer/assets/img/logo putih/stripped.png" alt="stripped-logo" style="width: 40px;" class="wedding-btn-toggle"></a>
 						<div class="collapse navbar-collapse" id="navbarText">
 							<ul class="navbar-nav ml-auto mx-auto">
 							</ul>
@@ -270,15 +268,21 @@
 						</div>
 					</div>
 
-					<div class="row page mt-5">
-						<div class="col-md-12 col-xs-10">
-							<span class="page-prev"><a href="#"><img src="/bluesummer/assets/img/wedding/Arrow.svg" style="transform: rotateY(170deg);" alt="arrow-prev" class="arrow-nav"></a></span>
-							<div class="page-number">
-								<a href="#">01</a>
-								<a href="#">02</a>
-								<a href="#">03</a>
+					<div class="container wedding-pagin">
+						<div class="row page mt-5">
+							<div class="col-3">
+								<span class="page-prev"><a href="#"><img src="/bluesummer/assets/img/wedding/Arrow.svg" style="transform: rotateY(170deg);" alt="arrow-prev" class="arrow-nav"></a></span>
 							</div>
-							<span class="page-next"><a href="#"><img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-next" class="arrow-nav"></a></span>
+							<div class="col-6">
+								<div class="page-number">
+									<a href="#">01</a>
+									<a href="#">02</a>
+									<a href="#">03</a>
+								</div>
+							</div>
+							<div class="col-3">
+								<span class="page-next"><a href="#"><img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-next" class="arrow-nav"></a></span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -357,9 +361,11 @@
 					<li>Blog</li>
 					<li>Contact</li>
 				</ul>
-				<i class="fa fa-facebook fa-rounded fa-lg"></i>
-				<i class="fa fa-instagram fa-rounded fa-lg"></i>
-				<i class="fa fa-youtube fa-rounded fa-lg"></i>
+				<div class="navbar-wedding-socmed">
+					<i class="fa fa-facebook fa-rounded fa-lg"></i>
+					<i class="fa fa-instagram fa-rounded fa-lg"></i>
+					<i class="fa fa-youtube fa-rounded fa-lg"></i>
+				</div>
 			</aside>
 		</div>
 	</div>
