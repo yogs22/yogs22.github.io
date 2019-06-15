@@ -1314,17 +1314,6 @@ footer a {
 }
 
 /* == Video == */
-span.page-prev {
-    width: 19%;
-    float: left;
-    /* width: 120px; */
-}
-span.page-next {
-    text-align: right;
-    float: right;
-    width: 15%;
-    margin: 0 10px;
-}
 div.page-number {
     display: inline-block;
     list-style: none;
@@ -1345,7 +1334,7 @@ div.page-number.center-nav{
 
 div.page-number a{
 	margin: 0 5px;
-    font-size: 4vh;
+    font-size: 2rem;
     color: #777;
 }
 
@@ -1720,11 +1709,6 @@ div.page-number a:hover{
 		margin: 10px 0;
 		font-size: 2em;
 	}
-
-	span.page-next {
-	    margin: 10px 10px;
-		font-size: 2em;
-	}
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
@@ -1838,10 +1822,5 @@ div.page-number a:hover{
 		width: 100%;
 		margin: 0 !important;
 		font-size: 1.8em;
-	}
-
-	.wedding-header-overlay-description .description {
-		width: 80%;
-		margin: auto;
 	}
 }
