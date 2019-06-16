@@ -1663,15 +1663,6 @@ div.page-number a:hover{
 	top: 90%;
 }
 
-/***
-** background mobile navbar
-**/
-
-.nav-mobile-bg {
-    background: rgba(0, 0, 0, 0.85);
-    border-radius: 10px;
-	margin-right: 3px;
-}
 
 /***
 ** Media Querys for Responsive
@@ -1709,6 +1700,11 @@ div.page-number a:hover{
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
+	.nav-mobile-bg {
+	    background: rgba(0, 0, 0, 0.85);
+	    border-radius: 10px;
+		margin-right: 3px;
+	}
 	#navbarFooter{
 		display: block !important;
 		text-align: center;
@@ -1757,11 +1753,9 @@ div.page-number a:hover{
 	.flex-wrap-media {
 		flex-wrap: wrap;
 	}
-
 	.image-team-left-minus {
 		margin-left: 0;
 	}
-
 	.p-none {
 		padding: 15px !important;
 	}
