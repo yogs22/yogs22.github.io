@@ -1675,6 +1675,19 @@ div.page-number a:hover{
 }
 
 @media screen  and (max-width: 979px) /* Tablet */ {
+	 .nav-about{
+		 background: #000;
+	 }
+	.image-team-left-minus {
+	    margin-left: -100px;
+	}
+	div.page-number {
+	    width: 95%;
+	}
+	.film-header-overlay img.play-slide-image{
+		width: 50px;
+		margin: 10px auto;
+	}
 	.sidebar-column {
 		width: 20%;
 	}
@@ -1720,6 +1733,12 @@ div.page-number a:hover{
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
+	.nav-about{
+		background: #000;
+	}
+	div.page-number{
+		width: 87%;
+	}
 	.nav-mobile-bg {
 	    background: rgba(0, 0, 0, 0.85);
 	    border-radius: 10px;
@@ -1739,7 +1758,7 @@ div.page-number a:hover{
 		margin: auto;
 	}
 	.film-header {
-	    height: 70vh !important;
+	    height: 100vh !important;
 	}
 	.ml-5{
 		margin-left: 1rem!important;
