@@ -16,7 +16,7 @@
 	<style media="screen">
 		.slick-center {
 			opacity: 1 !important;
-			transform: scale(1.2);
+			transform: scale(1.3);
 			transition: 0.3s ease-in-out;
 		}
 
@@ -33,16 +33,20 @@
 			font-size: 30px;
 			color: #043f70;
 		}
+
+		.swiper-pagination-current {
+			position: relative;
+		}
 	</style>
 </head>
 <body>
 	<div class="wedding-show-navbar p-4">
 		<div class="container">
 			<div class="row wedding-show-navbar-wrapper">
-				<div class="col-md-1">
+				<div class="col-1">
 					<img src="/bluesummer/assets/img/logo/Bluesummer Wedding.png" alt="Wedding Image" style="width: 70px">
 				</div>
-				<div class="col-md-5 offset-md-3">
+				<div class="col-5 offset-3">
 					<form class="form-horizontal" action="index.html" method="get">
 						<div class="input-group">
 							<input class="form-control" type="text" name="search" placeholder="Search">
@@ -52,7 +56,7 @@
 						</div>
 					</form>
 				</div>
-				<div class="col-md-1 offset-md-2 text-right">
+				<div class="col-1 offset-2 text-right">
 					<img src="/bluesummer/assets/img/wedding/Close.svg" alt="Close Navbar" class="wedding-close-navbar">
 				</div>
 			</div>
@@ -62,12 +66,10 @@
 	<div class="wedding-wrapper">
 		<div class="wedding-content">
 			<header class="wedding-header">
-				<nav class="navbar navbar-expand-sm navbar-transparent navbar-absolute">
+				<nav class="navbar navbar-wedding navbar-expand-sm navbar-transparent navbar-absolute">
 					<div class="container">
 						<a class="navbar-brand" href="/bluesummer/wedding"><img src="/bluesummer/assets/img/logo putih/Bluesummer wedding logo putih.png" class="d-inline-block align-top nav-img-mini" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
+						<a class="nav-link d-block d-sm-none" href="#"><img src="/bluesummer/assets/img/logo putih/stripped.png" alt="stripped-logo" style="width: 40px;" class="wedding-btn-toggle"></a>
 						<div class="collapse navbar-collapse" id="navbarText">
 							<ul class="navbar-nav ml-auto mx-auto">
 							</ul>
@@ -88,7 +90,7 @@
 								<div class="wedding-header-overlay-description text-left">
 									<div class="container">
 										<div class="row">
-											<div class="col-md-5 offset-md-7">
+											<div class="col-lg-4 offset-lg-8 col-md-12">
 												<h1 class="font-weight-bold">Lievia & Bobby</h1>
 												<p class="description">
 													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lorem
@@ -106,7 +108,7 @@
 								<div class="wedding-header-overlay-description text-left">
 									<div class="container">
 										<div class="row">
-											<div class="col-md-5 offset-md-7">
+											<div class="col-lg-4 offset-lg-8 col-md-12">
 												<h1 class="font-weight-bold">Indri & Yoo Nimi</h1>
 												<p class="description">
 													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -124,7 +126,7 @@
 								<div class="wedding-header-overlay-description text-left">
 									<div class="container">
 										<div class="row">
-											<div class="col-md-5 offset-md-7">
+											<div class="col-lg-4 offset-lg-8 col-md-12">
 												<h1 class="font-weight-bold">Bram & Widya</h1>
 												<p class="description">
 													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -216,13 +218,13 @@
 
 				<div class="container">
 					<div class="row">
-						<div class="col-md-3">
+						<div class="col-3">
 							<img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-prev" class="wedding-arrow-slideshow" style="transform: rotateY(170deg);" id="work-arrow-prev">
 						</div>
-						<div class="col-md-6">
+						<div class="col-6">
 							<div class="text-center wedding-dot-slideshow-container"></div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-3">
 							<img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-next" class="wedding-arrow-slideshow float-right" id="work-arrow-next">
 						</div>
 					</div>
@@ -231,10 +233,10 @@
 
 			<section id="teams">
 				<div class="row">
-					<div class="col-md-6 col-xs-12 bg-light-grey wedding-team-padding">
+					<div class="col-lg-6 col-md-12 col-xs-12 bg-light-grey wedding-team-padding">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-8 offset-md-2">
+								<div class="col-md-7 offset-md-2">
 									<b>Hello There,</b>
 									<hr class="border-blue">
 									<h3 class="font-weight-bold">Meet Our Teams</h3>
@@ -244,27 +246,29 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-xs-12 wedding-team-padding">
-						<div class="row wedding-team-wrapper">
-							<div class="col-6 col-xs-12 wedding-team">
-								<div class="wedding-team-image">
-									<img src="/bluesummer/assets/img/wedding/bakso square.png" alt="Bakso">
-									<div class="wedding-team-border-overlay"></div>
-									<div class="wedding-team-image-overlay">
-										<h6 class="blue font-weight-bold mb-1">- Elvasa Rembrand -</h6>
-										<a href="https://instagram.com/bluesummerwedding" target="_blank">videographer</a> <br>
-										<i class="fa fa-instagram fa-lg mt-2"></i>
+					<div class="col-lg-6 col-md-12 col-xs-12 wedding-team-padding">
+						<div class="container">
+							<div class="row wedding-team-wrapper">
+								<div class="col-md-6 col-sm-12 mb-lg-0 mb-3 wedding-team">
+									<div class="wedding-team-image">
+										<img src="/bluesummer/assets/img/wedding/bakso square.png" alt="Bakso">
+										<div class="wedding-team-border-overlay"></div>
+										<div class="wedding-team-image-overlay">
+											<h6 class="blue font-weight-bold mb-1">- Elvasa Rembrand -</h6>
+											<a href="https://instagram.com/bluesummerwedding" target="_blank">videographer</a> <br>
+											<i class="fa fa-instagram fa-lg mt-2"></i>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-6 col-xs-12 wedding-team">
-								<div class="wedding-team-image">
-									<img src="/bluesummer/assets/img/wedding/pempi square.png" alt="">
-									<div class="wedding-team-border-overlay"></div>
-									<div class="wedding-team-image-overlay">
-										<h6 class="blue font-weight-bold mb-1">- Pempi Square -</h6>
-										<a href="https://instagram.com/bluesummerwedding" target="_blank">videographer</a> <br>
-										<i class="fa fa-instagram fa-lg mt-2"></i>
+								<div class="col-md-6 col-sm-12 mb-lg-0 mb-3 wedding-team">
+									<div class="wedding-team-image">
+										<img src="/bluesummer/assets/img/wedding/pempi square.png" alt="">
+										<div class="wedding-team-border-overlay"></div>
+										<div class="wedding-team-image-overlay">
+											<h6 class="blue font-weight-bold mb-1">- Pempi Square -</h6>
+											<a href="https://instagram.com/bluesummerwedding" target="_blank">videographer</a> <br>
+											<i class="fa fa-instagram fa-lg mt-2"></i>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -300,15 +304,21 @@
 				<div class="wedding-image-box">
 					<img src="/bluesummer/assets/img/wedding/lievia boby/DSCF6518.JPG" class="image-fit" alt="">
 				</div>
+				<div class="wedding-image-box">
+					<img src="/bluesummer/assets/img/wedding/lievia boby/DSCF7013.JPG" class="image-fit" alt="">
+				</div>
+				<div class="wedding-image-box">
+					<img src="/bluesummer/assets/img/wedding/lievia boby/DSCF6212.JPG" class="image-fit" alt="">
+				</div>
 			</div>
 
 			<footer class="py-4 bg-nav-light-grey">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-1 col-xs-12">
+						<div class="col-md-2 col-xs-12">
 							<img src="/bluesummer/assets/img/logo/Bluesummer Wedding.png" class="footer-image-wedding" alt="">
 						</div>
-						<div class="col-md-10 col-xs-12">
+						<div class="col-md-8 col-xs-12">
 							<ul class="wedding-list list-inline">
 								<li class="list-inline-item wedding-list-item"><a href="#">About</a></li>
 								<li class="list-inline-item wedding-list-item"><a href="#">Contact Us</a></li>
@@ -316,15 +326,15 @@
 								<li class="list-inline-item wedding-list-item"><a href="#">Phasellus iaculis</a></li>
 							</ul>
 						</div>
-						<div class="col-md-1 col-xs-12">
+						<div class="col-md-2 col-xs-12">
 							<ul class="wedding-list list-inline">
-								<li class="list-inline-item mr-4">
+								<li class="list-inline-item mx-lg-4 mx-2">
 									<a href="#"><i class="fa fa-instagram fa-lg"></i></a>
 								</li>
-								<li class="list-inline-item mr-4">
+								<li class="list-inline-item mx-lg-4 mx-2">
 									<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
 								</li>
-								<li class="list-inline-item mr-4">
+								<li class="list-inline-item mx-lg-4 mx-2">
 									<a href="#"><i class="fa fa-youtube fa-lg"></i></a>
 								</li>
 							</ul>
@@ -348,9 +358,11 @@
 					<li>Blog</li>
 					<li>Contact</li>
 				</ul>
-				<i class="fa fa-facebook fa-rounded fa-lg"></i>
-				<i class="fa fa-instagram fa-rounded fa-lg"></i>
-				<i class="fa fa-youtube fa-rounded fa-lg"></i>
+				<div class="navbar-wedding-socmed">
+					<i class="fa fa-facebook fa-rounded fa-lg"></i>
+					<i class="fa fa-instagram fa-rounded fa-lg"></i>
+					<i class="fa fa-youtube fa-rounded fa-lg"></i>
+				</div>
 			</aside>
 		</div>
 	</div>
@@ -365,13 +377,13 @@
 		$(document).ready(function(){
 			$('.wedding-slideshow-container').slick({
 				centerMode: true,
-				centerPadding: '200px',
 				slidesToShow: 1,
 				nextArrow: $('#work-arrow-next'),
         		prevArrow: $('#work-arrow-prev'),
-				autoplay: true,
+				// autoplay: true,
   				autoplaySpeed: 5000,
 				dots: true,
+				variableWidth: true,
 				appendDots: $('.wedding-dot-slideshow-container'),
 				responsive: [
 			    {
@@ -403,6 +415,7 @@
 		  parallax: true,
 		  effect: 'fade',
 	      loop: true,
+		  variableWidth: true,
 	      pagination: {
 	        el: '.wedding-swiper-pagination',
 	        clickable: true,

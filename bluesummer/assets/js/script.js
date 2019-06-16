@@ -15,11 +15,11 @@ $('[data-fancybox="images"]').fancybox({
 
 // Wedding Navbar
 $('.wedding-btn-toggle').click(function(event) {
-    $('.wedding-wrapper').css('margin-left', '-31%');
+    $('.wedding-wrapper').addClass('wedding-wrapper-margin');
     $('.wedding-show-navbar').css('margin-top', '0');
 });
 
 $('.wedding-close-navbar').click(function(event) {
-    $('.wedding-wrapper').css('margin-left', '0');
+    $('.wedding-wrapper').removeClass('wedding-wrapper-margin');
     $('.wedding-show-navbar').css('margin-top', '-130px');
 });
