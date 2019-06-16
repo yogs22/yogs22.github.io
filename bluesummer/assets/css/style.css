@@ -218,7 +218,7 @@ a:hover {
 }
 
 .navbar-light {
-	    box-shadow: 0px 2px 5px 0px;
+    box-shadow: 0px 1px 1px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -230,13 +230,26 @@ a:hover {
 	font-weight: bold;
 }
 
+.navbar-brand-music {
+	position: absolute;
+	top: 0;
+	height: 90px;
+	background: #043f70;
+	padding: 10px;
+}
+
+.box-image {
+	position: relative;
+}
+
 .box-overlay {
     position: absolute;
     bottom: 0;
+	left: 0;
     color: white;
     text-align: left;
     padding: 30px;
-    width: 95%;
+    width: 100%;
 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.8));
 }
 
@@ -1709,6 +1722,10 @@ div.page-number a:hover{
 		margin: 10px 0;
 		font-size: 2em;
 	}
+
+	.navbar-brand-music {
+		left: 10px;
+	}
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
@@ -1724,9 +1741,6 @@ div.page-number a:hover{
 	}
 	#navbarSosmed ul li{
 		margin: auto;
-	}
-	.nav-img-mini {
-	    margin-left: 28px;
 	}
 	.film-header {
 	    height: 70vh !important;
@@ -1822,5 +1836,15 @@ div.page-number a:hover{
 		width: 100%;
 		margin: 0 !important;
 		font-size: 1.8em;
+	}
+
+	.music-pagin div.page-number.center-nav .center-prev-nav,
+	.music-pagin div.page-number.center-nav .center-next-nav,
+	.music-pagin .arrow-nav {
+		margin: 0;
+	}
+
+	.navbar-brand-music {
+		position: relative;
 	}
 }
