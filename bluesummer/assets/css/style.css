@@ -958,6 +958,34 @@ a:hover {
 	opacity: 1;
 }
 
+.wedding-contact {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
+
+.wedding-contact-list {
+	font-size: 16px;
+}
+
+.wedding-contact-form {
+	background: #fff;
+	padding: 50px;
+	border-radius: 30px;
+	width: 70%;
+}
+
+.wedding-contact-form-control {
+	width: 100%;
+	padding-top: 5px;
+	border-bottom: 1px solid #ddd;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-radius: 0;
+	margin-bottom: 15px;
+}
+
 /* == Gallery IG == */
 
 .wedding-image {
@@ -1730,6 +1758,10 @@ div.page-number a:hover{
 	.navbar-brand-music {
 		left: 10px;
 	}
+
+	.wedding-contact-form {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
@@ -1859,5 +1891,10 @@ div.page-number a:hover{
 
 	.navbar-brand-music {
 		position: relative;
+	}
+
+	.wedding-header-contact,
+	.wedding-contact {
+		height: 190vh;
 	}
 }
