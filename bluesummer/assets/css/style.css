@@ -33,12 +33,12 @@ a:hover {
 
 .image-300 {
 	width: 100%;
-	height: 270px;
+	height: 300px;
 }
 
 .image-600 {
 	width: 100%;
-	height: 600px;
+	height: 609px;
 }
 
 .image-team-left-minus {
@@ -404,6 +404,46 @@ a:hover {
 	margin-top: 10px;
 }
 
+.image-music-about {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	width: 130%;
+	height: 110%;
+	position: absolute;
+	top: -100px;
+	left: -250px;
+}
+
+.music-line-title {
+	width: 50px;
+	height: 5px;
+	background: #043f70;
+	margin-bottom: 10px;
+}
+
+.music-icon-about {
+	width: 70px;
+	height: 70px;
+}
+
+.music-team {
+	position: relative;
+}
+
+.music-team .card {
+	border-radius: 20px;
+}
+
+.music-team .card .card-body {
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.music-team .card .card-img-top {
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
 .posts {
 	position: relative;
 }
@@ -563,7 +603,7 @@ a:hover {
     background: #fff;
     border-radius: 3px;
     text-decoration: none;
-	width: 70%;
+	width: 50%;
 }
 
 .artist-overlay {
@@ -618,6 +658,7 @@ a:hover {
     position: relative;
 	width: auto;
 	display: inline-block;
+	text-transform: uppercase;
 }
 
 .allartist .judul {
