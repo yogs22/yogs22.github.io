@@ -102,6 +102,10 @@ a:hover {
 	border-bottom: 3px solid #043f70;
 }
 
+.border-bottom-blue {
+	border-bottom: 2px solid #043f70;
+}
+
 .width-full {
 	width: 100%;
 }
@@ -418,6 +422,14 @@ a:hover {
 	width: 50px;
 	height: 5px;
 	background: #043f70;
+	margin-bottom: 10px;
+}
+
+.music-line-small {
+	width: 70px;
+	height: 3px;
+	background: #043f70;
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
