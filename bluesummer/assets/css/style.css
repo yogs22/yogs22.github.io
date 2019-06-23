@@ -426,6 +426,12 @@ a:hover {
 	height: 70px;
 }
 
+.music-contact-form .form-control {
+	margin: 20px 0;
+	border-radius: 0;
+	border: 2px solid #043f70;
+}
+
 .music-team {
 	position: relative;
 }
