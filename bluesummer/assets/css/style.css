@@ -1325,6 +1325,72 @@ a:hover {
 }
 
 /****
+** Wedding Blog
+**/
+#blog-post{
+	background: #d0d0d0;
+}
+
+.post-blog{
+
+}
+
+.post-blog .post{
+	background: #fff;
+    border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.post-blog .post h2 {
+    margin: 5px 25px;
+    font-size: 1.3rem;
+}
+
+.post-blog .post img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 16px;
+}
+
+.post-blog span.date {
+    margin: 25px;
+    font-size: 0.8rem;
+}
+.post-blog .post .excerpt {
+    margin: 0 25px;
+}
+
+.detail {
+    display: flex;
+    margin: 0 15px;
+    /* justify-content: space-between; */
+}
+
+.detail .love {
+    margin: 10px;
+    padding: 5px;
+	cursor: pointer;
+}
+
+.love:hover, .comment:hover{
+	color: #0056b3;
+}
+
+.detail .comment{
+	margin: 10px;
+    padding: 5px;
+	cursor: pointer;
+}
+
+.detail .more {
+    margin: 10px;
+    padding: 5px;
+    margin-left: auto;
+	font-weight: bold;
+}
+
+
+/****
 ** Footer Class
 **/
 
