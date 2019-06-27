@@ -775,6 +775,23 @@ a:hover {
 	text-align: right;
 }
 
+.wedding-sidebar small {
+	font-size: 11px;
+}
+
+.wedding-sidebar a {
+	color: #5d5e5f !important;
+	transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	-ms-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+}
+
+.wedding-sidebar a:hover {
+	color: #043f70 !important;
+}
+
 .wedding-single-wrapper {
 	position: relative;
 }
