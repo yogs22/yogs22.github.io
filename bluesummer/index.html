@@ -143,14 +143,17 @@
 					width++;
 					elem.style.width = width + '%';
 					document.getElementById('myTextProgress').innerHTML = width * 1  + '%';
+
+					if (width == 99) {
+						$(document).ready(function() {
+							$('.loading').fadeOut();
+						});
+					}
 				}
 			}
 		}
 
 		progressBar()
-		$(document).ready(function() {
-			$('.loading').fadeOut();
-		});
 	</script>
 </body>
 </html>
