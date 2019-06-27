@@ -9,6 +9,17 @@
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/style.css">
 </head>
 <body>
+	<div class="loading">
+		<div class="loading-wrapper row">
+			<div class="col-lg-3 loading-box text-center">
+				<img src="/bluesummer/assets/img/logo/Layer 1.png" class="image" alt="">
+				<div class="progress">
+					<div class="bar" id="myBar"></div>
+				</div>
+				<b class="blue text-center">Loading <span id="myTextProgress"></span></b>
+			</div>
+		</div>
+	</div>
 	<div class="row">
 		<div class="sidebar-column">
 			<aside class="home-sidebar">
@@ -118,7 +129,28 @@
 			</footer>
 		</div>
 	</div>
-	<script type="text/javascript" src="/bluesummer/assets/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="/bluesummer/assets/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="/bluesummer/assets/js/script.js"></script>
+	<script type="text/javascript">
+		function progressBar() {
+			var elem = document.getElementById('myBar');
+			var width = 10;
+			var id = setInterval(frame, 10);
+			function frame() {
+				if (width >= 99) {
+					clearInterval(id);
+				} else {
+					width++;
+					elem.style.width = width + '%';
+					document.getElementById('myTextProgress').innerHTML = width * 1  + '%';
+				}
+			}
+		}
+
+		progressBar()
+		$(document).ready(function() {
+			$('.loading').fadeOut();
+		});
+	</script>
 </body>
 </html>
