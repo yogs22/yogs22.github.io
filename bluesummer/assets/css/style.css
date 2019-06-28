@@ -1523,6 +1523,41 @@ a:hover {
 	font-weight: bold;
 }
 
+/****
+** Wedding Single Blog
+**/
+#blog-post-content{
+
+}
+
+#blog-post-content .post-title{
+	margin-bottom: 20px;
+}
+
+#blog-post-content .post-title .post-detail{
+	display: inline-flex;
+}
+
+.post-title-border {
+    margin: 10px 0;
+    border-bottom: 8px solid #043f70;
+    width: 10%;
+}
+
+#blog-post-content .post-title .post-detail .love, #blog-post-content .post-title .post-detail .comment{
+	margin-right: 15px;
+}
+
+#blog-post-content .post-content{
+
+}
+
+#blog-post-content .post-content img{
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	margin: 10px 0;
+}
 
 /****
 ** Footer Class
