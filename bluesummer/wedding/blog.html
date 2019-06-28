@@ -6,50 +6,10 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/bluesummer/assets/css/jquery.fancybox.css">
-	<style media="screen">
-		#myModal {
-			padding: 0 !important;
-		}
-
-		#myModal .modal-header{
-			border-bottom: none;
-		}
-
-		.modal-full {
-			min-width: 90%;
-		    margin: auto;
-		    display: block;
-		}
-
-		.modal-full .modal-content {
-		    min-height: 100vh;
-		}
-
-		* {
-			box-sizing: border-box;
-		}
-		@media all and (min-width: 800px) {
-		  .fancybox-thumbs {
-		    top: auto;
-		    width: auto;
-		    bottom: 0;
-		    left: 0;
-		    right : 0;
-		    height: 95px;
-		    padding: 10px 10px 5px 10px;
-		    box-sizing: border-box;
-			background: none !important;
-		  }
-
-		  .fancybox-show-thumbs .fancybox-inner {
-		    right: 0;
-		    bottom: 95px;
-		  }
-		}
-	</style>
 </head>
 <body>
 	<div class="wedding-show-navbar p-4">
@@ -94,18 +54,31 @@
 					</div>
 				</nav>
 
-				<img src="/bluesummer/assets/img/wedding/bram & widya/DSCF5865.JPG" class="wedding-header-image image-fit" alt="">
+				<img src="/bluesummer/assets/img/wedding/bouquet-celebration-color-169190.jpg" class="wedding-header-image image-fit" alt="">
 				<div class="wedding-header-overlay text-white">
 					<div class="wedding-header-overlay-description">
-						<div class="row container text-center">
-							<div class="col-md-12">
+						<div class="row container">
+							<div class="col-md-1 d-none d-sm-block">
+								<div class="weddong-arrow-single">
+									<img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-prev" class="wedding-swipper-button-prev" style="transform: rotateY(170deg);left: 0">
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="description">
+									<h2 class="font-weight-bold">Plan a Wedding Never You Forget</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+									<a href="#" class="btn btn-outline-white px-5">View</a>
+								</div>
+							</div>
+							<div class="col-md-1 offset-md-5 d-none d-sm-block">
+								<div class="weddong-arrow-single">
+									<img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-next" class="wedding-swipper-button-next" style="right: 0">
+								</div>
+							</div>
+							<div class="col-md-12 d-sm-block d-md-none mt-4">
 								<div class="weddong-arrow-single">
 									<img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-prev" class="wedding-swipper-button-prev" style="transform: rotateY(170deg);left: 0">
 									<img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-next" class="wedding-swipper-button-next" style="right: 0">
-								</div>
-								<div class="description">
-									<h1 class="font-weight-bold">Creating Art</h1>
-									<h3>Capture The Moment</h3>
 								</div>
 							</div>
 						</div>
@@ -116,140 +89,151 @@
 			<section id="blog-post">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
-							<p align="right">Searcjh</p>
-							<p align="left">Searcjh</p>
+						<div class="col-md-3">
+							<div class="input-group mb-3">
+								<select class="form-control" name="">
+									<option value="">Date Added</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-3 offset-md-6">
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+								<div class="input-group-append">
+									<span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row post-blog">
 						<div class="col-md-4">
 							<div class="post">
-								<img src="/bluesummer/assets/img/wedding/bram & widya/DSCF5865.JPG" alt="">
+								<img src="/bluesummer/assets/img/wedding/beautiful-bouquet-bridal-313707.jpg" alt="">
 								<span class="date">19 Juni 2019</span>
-								<h2><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+								<h2><a href="#" class="blue font-weight-bold">Lorem Ipsum Dolor</a></h2>
 								<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 									  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 								</p>
 								<div class="detail">
 									<div class="love">
-										<i class="fa fa-heart"></i> 20
+										<i class="fa fa-heart blue"></i> &nbsp; 20
 									</div>
 									<div class="comment">
-										<i class="fa fa-comment"></i> 27
+										<i class="fa fa-comment"></i> &nbsp; 27
 									</div>
-									<div class="more">
-										<a href="#"><i class="fa fa-align-left"></i> Read more</a>
+									<div class="more blue">
+										<a href="#" class="blue"><i class="fa fa-align-left"></i> Read more</a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="post">
-								<img src="/bluesummer/assets/img/wedding/bram & widya/DSCF5865.JPG" alt="">
+								<img src="/bluesummer/assets/img/wedding/blur-candle-candlestick-1128783.jpg" alt="">
 								<span class="date">19 Juni 2019</span>
-								<h2><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+								<h2><a href="#" class="blue font-weight-bold">Lorem Ipsum Dolor</a></h2>
 								<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 									  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 								</p>
 								<div class="detail">
 									<div class="love">
-										<i class="fa fa-heart"></i> 20
+										<i class="fa fa-heart blue"></i> &nbsp; 20
 									</div>
 									<div class="comment">
-										<i class="fa fa-comment"></i> 27
+										<i class="fa fa-comment"></i> &nbsp; 27
 									</div>
-									<div class="more">
-										<a href="#"><i class="fa fa-align-left"></i> Read more</a>
+									<div class="more blue">
+										<a href="#" class="blue"><i class="fa fa-align-left"></i> Read more</a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="post">
-								<img src="/bluesummer/assets/img/wedding/bram & widya/DSCF5865.JPG" alt="">
+								<img src="/bluesummer/assets/img/wedding/bride-ceremony-chairs-794254.jpg" alt="">
 								<span class="date">19 Juni 2019</span>
-								<h2><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+								<h2><a href="#" class="blue font-weight-bold">Lorem Ipsum Dolor</a></h2>
 								<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 									  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 								</p>
 								<div class="detail">
 									<div class="love">
-										<i class="fa fa-heart"></i> 20
+										<i class="fa fa-heart blue"></i> &nbsp; 20
 									</div>
 									<div class="comment">
-										<i class="fa fa-comment"></i> 27
+										<i class="fa fa-comment"></i> &nbsp; 27
 									</div>
-									<div class="more">
-										<a href="#"><i class="fa fa-align-left"></i> Read more</a>
+									<div class="more blue">
+										<a href="#" class="blue"><i class="fa fa-align-left"></i> Read more</a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="post">
-								<img src="/bluesummer/assets/img/wedding/bram & widya/DSCF5865.JPG" alt="">
+								<img src="/bluesummer/assets/img/wedding/bride-ceremony-chairs-794254.jpg" alt="">
 								<span class="date">19 Juni 2019</span>
-								<h2><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+								<h2><a href="#" class="blue font-weight-bold">Lorem Ipsum Dolor</a></h2>
 								<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 									  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 								</p>
 								<div class="detail">
 									<div class="love">
-										<i class="fa fa-heart"></i> 20
+										<i class="fa fa-heart blue"></i> &nbsp; 20
 									</div>
 									<div class="comment">
-										<i class="fa fa-comment"></i> 27
+										<i class="fa fa-comment"></i> &nbsp; 27
 									</div>
-									<div class="more">
-										<a href="#"><i class="fa fa-align-left"></i> Read more</a>
+									<div class="more blue">
+										<a href="#" class="blue"><i class="fa fa-align-left"></i> Read more</a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="post">
-								<img src="/bluesummer/assets/img/wedding/bram & widya/DSCF5865.JPG" alt="">
+								<img src="/bluesummer/assets/img/wedding/blur-candle-candlestick-1128783.jpg" alt="">
 								<span class="date">19 Juni 2019</span>
-								<h2><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+								<h2><a href="#" class="blue font-weight-bold">Lorem Ipsum Dolor</a></h2>
 								<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 									  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 								</p>
 								<div class="detail">
 									<div class="love">
-										<i class="fa fa-heart"></i> 20
+										<i class="fa fa-heart blue"></i> &nbsp; 20
 									</div>
 									<div class="comment">
-										<i class="fa fa-comment"></i> 27
+										<i class="fa fa-comment"></i> &nbsp; 27
 									</div>
-									<div class="more">
-										<a href="#"><i class="fa fa-align-left"></i> Read more</a>
+									<div class="more blue">
+										<a href="#" class="blue"><i class="fa fa-align-left"></i> Read more</a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="post">
-								<img src="/bluesummer/assets/img/wedding/bram & widya/DSCF5865.JPG" alt="">
+								<img src="/bluesummer/assets/img/wedding/beautiful-bouquet-bridal-313707.jpg" alt="">
 								<span class="date">19 Juni 2019</span>
-								<h2><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+								<h2><a href="#" class="blue font-weight-bold">Lorem Ipsum Dolor</a></h2>
 								<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 									  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 								</p>
 								<div class="detail">
 									<div class="love">
-										<i class="fa fa-heart"></i> 20
+										<i class="fa fa-heart blue"></i> &nbsp; 20
 									</div>
 									<div class="comment">
-										<i class="fa fa-comment"></i> 27
+										<i class="fa fa-comment"></i> &nbsp; 27
 									</div>
-									<div class="more">
-										<a href="#"><i class="fa fa-align-left"></i> Read more</a>
+									<div class="more blue">
+										<a href="#" class="blue"><i class="fa fa-align-left"></i> Read more</a>
 									</div>
 								</div>
 							</div>
@@ -258,7 +242,7 @@
 					<div class="container wedding-pagin">
 						<div class="row page mt-5">
 							<div class="col-1 d-flex align-items-center">
-								<span class="page-prev"><a href="#"><img src="/bluesummer/assets/img/wedding/Arrow.svg" style="transform: rotateY(170deg);" alt="arrow-prev" class="arrow-nav"></a></span>
+								<span class="page-prev"><a href="#"><img src="/bluesummer/assets/img/wedding/Arrow.svg" style="transform: rotateY(170deg);margin: 0" alt="arrow-prev" class="arrow-nav"></a></span>
 							</div>
 							<div class="col-10 text-center">
 								<div class="page-number">
@@ -268,7 +252,7 @@
 								</div>
 							</div>
 							<div class="col-1 d-flex align-items-center justify-content-end">
-								<span class="page-next"><a href="#"><img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-next" class="arrow-nav"></a></span>
+								<span class="page-next"><a href="#"><img src="/bluesummer/assets/img/wedding/Arrow.svg" alt="arrow-next" class="arrow-nav" style="margin: 0"></a></span>
 							</div>
 						</div>
 					</div>

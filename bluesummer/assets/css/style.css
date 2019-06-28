@@ -1458,17 +1458,21 @@ a:hover {
 ** Wedding Blog
 **/
 #blog-post{
-	background: #d0d0d0;
+	background: #efefef;
 }
 
-.post-blog{
-
+.post-blog p,
+.post-blog span {
+	font-size: 13px;
+	line-height: 1.8;
 }
 
-.post-blog .post{
+.post-blog .post {
 	background: #fff;
     border-radius: 10px;
 	margin-bottom: 20px;
+	padding-bottom: 50px;
+	box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.16);
 }
 
 .post-blog .post h2 {
