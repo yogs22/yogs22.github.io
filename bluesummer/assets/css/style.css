@@ -802,7 +802,6 @@ a:hover {
 }
 
 .wedding-sidebar {
-	display: none;
 	width: 16%;
 	display: inline-block;
 	position: absolute;
@@ -1935,7 +1934,14 @@ div.page-number a:hover{
 **/
 
 
-@media screen and (min-width: 1920px) {
+
+@media screen and (min-width: 1500px) {
+	.wedding-team {
+		height: 400px;
+	}
+}
+
+@media screen and (min-width: 1800px) {
 	.wedding-team {
 		height: 450px;
 	}
