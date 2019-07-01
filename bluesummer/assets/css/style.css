@@ -199,6 +199,14 @@ a:hover {
 	color: #fff;
 }
 
+.navbar-white {
+	background: #fff;
+}
+
+.navbar-white a {
+	color: #000;
+}
+
 .navbar-absolute {
 	position: absolute;
 	top: 0;
