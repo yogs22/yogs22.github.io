@@ -1362,6 +1362,10 @@ a:hover {
 	cursor: pointer;
 }
 
+.p-team {
+	padding-top: 6em;
+}
+
 .film .minion{
 	background: none !important;
 	color: #eee;
@@ -1974,6 +1978,10 @@ div.page-number a:hover{
 }
 
 @media screen and (min-width: 1800px) {
+	.home-team-logo {
+		height: auto;
+	}
+	
 	.wedding-team {
 		height: 450px;
 	}
@@ -1984,6 +1992,9 @@ div.page-number a:hover{
 }
 
 @media screen  and (max-width: 979px) /* Tablet */ {
+	.home-team-logo {
+		height: auto;
+	}
 	 .nav-about{
 		 background: #000;
 	 }
@@ -2042,6 +2053,14 @@ div.page-number a:hover{
 
 	.wedding-contact-form {
 		width: 100%;
+	}
+
+	.p-team {
+		padding: 3em;
+	}
+
+	.image-team-left-minus {
+		margin: 0;
 	}
 }
 
