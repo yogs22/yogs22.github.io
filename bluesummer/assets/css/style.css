@@ -1411,9 +1411,15 @@ a:hover {
 
 .home-team-logo {
 	width: 100%;
-	height: 60vh;
+	height: 80vh;
 	object-fit: cover;
 	object-position: bottom;
+}
+
+.socmed-home-team {
+	position: absolute;
+	bottom: 40px;
+	background: transparent;
 }
 
 .home-sidebar .sidebar-item img {
@@ -1607,11 +1613,17 @@ footer.bg-blue a:hover {
 	color: #fff;
 }
 
-.nav-foot{
+.nav-foot {
 	display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+.nav-foot.home {
+	background: #fff;
+	width: 200px;
+	border-radius: 5px;
 }
 
 footer .nav-foot img{
@@ -1981,7 +1993,7 @@ div.page-number a:hover{
 	.home-team-logo {
 		height: auto;
 	}
-	
+
 	.wedding-team {
 		height: 450px;
 	}

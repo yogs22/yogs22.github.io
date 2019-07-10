@@ -67,9 +67,6 @@
 							<a class="nav-link blue" href="/bluesummer/music/news.html">News</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link blue" href="/bluesummer/music/video.html">Video</a>
-						</li>
-						<li class="nav-item">
 							<a class="nav-link blue" href="/bluesummer/music/about.html">About Us</a>
 						</li>
 						<li class="nav-item">
@@ -342,6 +339,15 @@
 		$(document).ready(function(){
 			$('.music-slideshow-container')
 			.on('afterChange init', function(event, slick, direction){
+				var audio = $('audio');
+				for (var i = 0; i < audio.length; i++) {
+					audio[i].pause();
+					audio[i].currentTime = 0;
+				}
+
+				$('.music-play-ico').removeClass('fa-pause');
+				$('.music-play-ico').addClass('fa-play');
+
 			    // find current slide
 			    for (var i = 0; i < slick.$slides.length; i++)
 			    {
