@@ -35,56 +35,66 @@ $(function () {
 	    initBinCanvas();
 });
 
-function playSample()
+var audioBuffer;
+var sourceNode;
+function setupAudioNodes() {
+	// setup a analyser
+	analyser = context.createAnalyser();
+	// create a buffer source node
+	sourceNode = context.createBufferSource();
+	//connect source to analyser as link
+	sourceNode.connect(analyser);
+	// and connect source to destination
+	sourceNode.connect(context.destination);
+	//start updating
+	rafID = window.requestAnimationFrame(updateVisualization);
+}
+
+function playMusic(url)
 {
+	fileChosen = true;
+    setupAudioNodes();
+
 	var request = new XMLHttpRequest();
-	requests.push(request);
-	if (fileChosen == true) {
-		requests.forEach(function(xhr) {
-			return xhr.abort()
+
+	request.addEventListener("progress", updateProgress);
+	request.addEventListener("load", transferComplete);
+	request.addEventListener("error", transferFailed);
+	request.addEventListener("abort", transferCanceled);
+
+	request.open('GET', 'playlist/' + url, true);
+	request.responseType = 'arraybuffer';
+
+ 	// When loaded decode the data
+	request.onload = function() {
+
+		$("#title").html("Infinite");
+		$("#album").html("Infinite");
+		$("#artist").html("Valence");
+		onWindowResize();
+		$("#title, #artist, #album").css("visibility", "visible");
+		console.log(request.response);
+		// decode the data
+		context.decodeAudioData(request.response, function(buffer) {
+		// when the audio is decoded play the sound
+		sourceNode.buffer = buffer;
+		sourceNode.start(0);
+		// $("#freq, body").addClass("animateHue");
+		//on error
+		}, function(e) {
+			console.log(e);
 		});
-	} else {
-		fileChosen = true;
-		setupAudioNodes();
+	};
+	request.send();
+}
 
-		request.addEventListener("progress", updateProgress);
-		request.addEventListener("load", transferComplete);
-		request.addEventListener("error", transferFailed);
-		request.addEventListener("abort", transferCanceled);
-
-		request.open('GET', 'playlist/Infinite.mp3', true);
-		request.responseType = 'arraybuffer';
-		// When loaded decode the data
-		request.onload = function() {
-			$("#title").html("Infinite");
-			$("#album").html("Infinite");
-			$("#artist").html("Valence");
-			$(this).removeClass('fa-pause');
-			$(this).addClass('fa-play');
-			onWindowResize();
-			$("#title, #artist, #album").css("visibility", "visible");
-
-			// decode the data
-			context.decodeAudioData(request.response, function(buffer) {
-				// when the audio is decoded play the sound
-				sourceNode.buffer = buffer;
-				sourceNode.start(0);
-				$("#freq").addClass("animateHue");
-				//on error
-			}, function(e) {
-				console.log(e);
-			});
-		};
-		request.send();
-	}
+function stopMusic() {
+	sourceNode.stop();
 }
 
 // progress on transfers from the server to the client (downloads)
 function updateProgress (oEvent) {
   if (oEvent.lengthComputable) {
-	$("button, input").prop("disabled",true);
-	$('.music-play-ico').removeClass('fa-play');
-	$('.music-play-ico').addClass('fa-pause');
     var percentComplete = oEvent.loaded / oEvent.total;
 	console.log("Loading music file... " + Math.floor(percentComplete * 100) + "%");
 	$("#loading").html("Loading... " + Math.floor(percentComplete * 100) + "%");
@@ -97,13 +107,11 @@ function updateProgress (oEvent) {
 function transferComplete(evt) {
   	console.log("The transfer is complete.");
 	$("#loading").html("");
-	//$("button, input").prop("disabled",false);
 }
 
 function transferFailed(evt) {
   	console.log("An error occurred while transferring the file.");
 	$("#loading").html("Loading failed.");
-	$("button, input").prop("disabled", false);
 }
 
 function transferCanceled(evt) {
@@ -152,22 +160,6 @@ function onWindowResize()
 		$("#title").css("font-size", "40px");
 	}
 }
-
-var audioBuffer;
-var sourceNode;
-function setupAudioNodes() {
-	// setup a analyser
-	analyser = context.createAnalyser();
-	// create a buffer source node
-	sourceNode = context.createBufferSource();
-	//connect source to analyser as link
-	sourceNode.connect(analyser);
-	// and connect source to destination
-	sourceNode.connect(context.destination);
-	//start updating
-	rafID = window.requestAnimationFrame(updateVisualization);
-}
-
 
 function reset () {
 	if (typeof sourceNode !== "undefined") {
@@ -269,6 +261,17 @@ function drawBars (array) {
 	}
 
 	ctx.restore();
+}
+
+sourceNode.onended = function(e) {
+	$('.music-play-ico').each(function(i) {
+		$(this).removeClass('fa-stop');
+		$(this).addClass('fa-play');
+		$(this).removeClass('stop-music');
+		$(this).addClass('play-music');
+		var id = $(this).attr('id');
+		$(this).attr("onClick", "playMusic('"+ id +"')");
+	});
 }
 
 //function setTextAnimation(array)

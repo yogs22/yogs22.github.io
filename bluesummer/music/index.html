@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/slick.css">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/css/audio.css">
 	<link rel="stylesheet" type="text/css" href="/bluesummer/assets/fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="icon" href="/bluesummer/assets/img/logo/Music.png">
 	<style media="screen">
@@ -81,17 +82,18 @@
 				</div>
 			</div>
 		</nav>
-		<div class="music-header-image mt-1">
+		<canvas id="freq" width="1024" height="1025"></canvas>
+		<div class="music-header-image mt-1 pt-2">
 			<div class="music-slideshow-container">
 				<div class="music-slideshow">
 					<img src="/bluesummer/assets/img/music/SVNSKA 3.jpg" class="music-slideshow-image image-fit" alt="">
 					<div class="music-slideshow-overlay">
 						<div class="text-center">
-							<i class="fa fa-play music-play-ico mb-3" id="music1"></i>
+							<i class="fa fa-play music-play-ico mb-3" id="Infinite.mp3" onclick="playMusic('Infinite.mp3')"></i>
 							<audio controls>
 								<source src="/bluesummer/music/playlist/dont-stop-me-now-queen.mp3" type="audio/mpeg">
 							</audio>
-							<p>09.29.2019</p>
+							<p>09.28.2019</p>
 							<h3 class="text-bold music-slideshow-title">'Kurang Piknik'</h3>
 							<p>SVNSKA</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -103,7 +105,7 @@
 					<img src="/bluesummer/assets/img/music/DSCF5721.jpg" class="music-slideshow-image image-fit" alt="">
 					<div class="music-slideshow-overlay">
 						<div class="text-center">
-							<i class="fa fa-play music-play-ico mb-3" id="music1"></i>
+							<i class="fa fa-play music-play-ico mb-3" id="viper.ogg" onclick="playMusic('viper.ogg')"></i>
 							<audio controls>
 								<source src="/bluesummer/music/playlist/queen-i-want-to-break-free.mp3" type="audio/mpeg">
 							</audio>
@@ -118,7 +120,7 @@
 					<img src="/bluesummer/assets/img/music/TEST ARTWORK 2.jpg" class="music-slideshow-image image-fit" alt="">
 					<div class="music-slideshow-overlay">
 						<div class="text-center">
-							<i class="fa fa-play music-play-ico mb-3" id="music1"></i>
+							<i class="fa fa-play music-play-ico mb-3" id="Infinite.mp3" onclick="playMusic('Infinite.mp3')"></i>
 							<audio controls>
 								<source src="/bluesummer/music/playlist/queen-i-want-to-break-free.mp3" type="audio/mpeg">
 							</audio>
@@ -133,7 +135,7 @@
 					<img src="/bluesummer/assets/img/music/ISSUE RILIS 1.jpg" class="music-slideshow-image image-fit" alt="">
 					<div class="music-slideshow-overlay">
 						<div class="text-center">
-							<i class="fa fa-play music-play-ico mb-3" id="music1"></i>
+							<i class="fa fa-play music-play-ico mb-3" id="Infinite.mp3" onclick="playMusic('Infinite.mp3')"></i>
 							<audio controls>
 								<source src="/bluesummer/music/playlist/dont-stop-me-now-queen.mp3" type="audio/mpeg">
 							</audio>
@@ -148,7 +150,7 @@
 			<div class="container music-pagin-arrow">
 				<div class="row">
 					<div class="col-4 text-right">
-						<img src="/bluesummer/assets/img/music/Arrow.svg" alt="arrow-prev" class="music-arrow-slideshow" id="music-arrow-prev">
+						<img src="/bluesummer/assets/img/music/Arrow.svg" alt="arrow-prev" class="music-arrow-slideshow" id="music-arrow-prev" onclick="stopMusic()">
 						<span class="blue">Previous</span>
 					</div>
 					<div class="col-4">
@@ -156,7 +158,7 @@
 					</div>
 					<div class="col-4 text-left">
 						<span class="blue">Next</span>
-						<img src="/bluesummer/assets/img/music/Arrow.svg" alt="arrow-next" class="music-arrow-slideshow" style="transform: rotateY(170deg);" id="music-arrow-next">
+						<img src="/bluesummer/assets/img/music/Arrow.svg" alt="arrow-next" class="music-arrow-slideshow" style="transform: rotateY(170deg);" id="music-arrow-next" onclick="stopMusic()">
 					</div>
 				</div>
 			</div>
@@ -331,10 +333,13 @@
 		<span class="ml-auto mx-auto">&copy; 2019 Bluesummer Music | All Rights Reversed </span>
 		<span class="float-right mobile-hidden">Designed by thirst creative</span>
 	</div>
-	<script type="text/javascript" src="/bluesummer/assets/js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="/bluesummer/assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="/bluesummer/assets/js/slick.js"></script>
-	<script type="text/javascript" src="/bluesummer/assets/js/script.js"></script>
+	<script src="/bluesummer/assets/js/jquery-1.9.1.min.js"></script>
+	<script src="/bluesummer/assets/js/bufferloader.js"></script>
+	<script src="/bluesummer/assets/js/id3-minimized.js"></script>
+	<script src="/bluesummer/assets/js/audiovisualisierung.js"></script>
+	<script src="/bluesummer/assets/js/bootstrap.min.js"></script>
+	<script src="/bluesummer/assets/js/slick.js"></script>
+	<script src="/bluesummer/assets/js/script.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('.music-slideshow-container')
@@ -345,7 +350,7 @@
 					audio[i].currentTime = 0;
 				}
 
-				$('.music-play-ico').removeClass('fa-pause');
+				$('.music-play-ico').removeClass('fa-stop');
 				$('.music-play-ico').addClass('fa-play');
 
 			    // find current slide
@@ -394,25 +399,29 @@
 		});
 
 		// Playing Music
-		$('.music-play-ico').click(function(e) {
-		    e.preventDefault();
-
-		    var song = $(this).next('audio').get(0);
-		    if (song.paused) {
-		        song.play();
+		$('.music-play-ico').click(function() {
+			if ($(this).hasClass('fa-play')) {
+				$(this).addClass('fa-stop');
 				$(this).removeClass('fa-play');
-				$(this).addClass('fa-pause');
-		    } else {
-				$(this).removeClass('fa-pause');
+				$(this).addClass('stop-music');
+				$(this).attr('onClick', 'stopMusic()');
+			} else {
+				$(this).removeClass('fa-stop');
 				$(this).addClass('fa-play');
-		        song.pause();
-		    }
+				$(this).removeClass('stop-music');
+				$(this).addClass('play-music');
+				var id = $(this).attr('id');
+				$(this).attr("onClick", "playMusic('"+ id +"')");
+			}
 		});
 
-		audio.onended = function() {
-	        $(".music-play-ico").removeClass('fa-pause');
-	        $(".music-play-ico").addClass('fa-play');
-	    };
+		$('.music-arrow-slideshow').click(function(e) {
+			$('.music-play-ico').each(function(i) {
+				var id = $(this).attr('id');
+				$(this).attr("onClick", "playMusic('"+ id +"')");
+			});
+		});
+
 	</script>
 </body>
 </html>
