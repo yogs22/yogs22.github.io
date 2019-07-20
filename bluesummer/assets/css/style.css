@@ -1,4 +1,4 @@
-body {
+html, body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	overflow-x: hidden;
@@ -992,11 +992,11 @@ a:hover {
 
 .wedding-swiper-pagination .swiper-pagination-current::before {
 	content: '';
-	width: 30px;
+	width: 20px;
 	border: 2px solid #fff;
 	position: absolute;
 	top: 50%;
-	left: -40px;
+	left: -30px;
 }
 
 .wedding-arrow-wrapper {
@@ -1653,9 +1653,14 @@ div.page-number {
     margin: auto;
 }
 
-div.page-number.center-nav .center-prev-nav, div.page-number.center-nav .center-next-nav, .arrow-nav{
+div.page-number.center-nav .center-prev-nav,
+div.page-number.center-nav .center-next-nav {
 	width: 30px;
 	margin: 0 50px;
+}
+
+.arrow-nav {
+	width: 26px;
 }
 
 div.page-number.center-nav{
@@ -2086,6 +2091,10 @@ div.page-number a:hover{
 	.image-team-left-minus {
 		margin: 0;
 	}
+
+	.music-header-image {
+		height: 60vh;
+	}
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
@@ -2233,5 +2242,44 @@ div.page-number a:hover{
 	.wedding-header-contact,
 	.wedding-contact {
 		height: 190vh;
+	}
+
+	.wedding-slide-work {
+		width: 530px !important;
+	}
+
+	.wedding-slide-overlay .description {
+		font-size: 1em;
+	}
+
+	.wedding-slide-overlay .description,
+	.wedding-slide-overlay .description h4 {
+		font-size: 0.9rem !important
+	}
+
+	.wedding-slide-overlay .play-image {
+		display: none;
+	}
+
+	.navbar-brand {
+		margin-left: 1rem;
+	}
+
+	.image-horizontal {
+		border-radius: 10px;
+	}
+
+	.js {
+		justify-content: flex-start !important;
+	}
+
+	.music-slideshow-container .music-slideshow {
+		width: 340px !important;
+		height: 340px;
+	}
+
+	.music-slideshow .music-slideshow-overlay {
+		padding: 20px;
+		font-size: 10px !important;
 	}
 }
