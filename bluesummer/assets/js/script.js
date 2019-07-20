@@ -4,6 +4,16 @@ function showContent(id) {
     $(id).fadeIn('500').addClass('active-content');
 }
 
+// Mouse hover home
+function hoverImage(element, image) {
+    element.setAttribute('src', image);
+}
+
+function unhoverImage(element, image) {
+    console.log(element)
+    element.setAttribute('src', image);
+}
+
 // Fancybox gallery wedding
 $('[data-fancybox="images"]').fancybox({
   margin : [44,0,22,0],
