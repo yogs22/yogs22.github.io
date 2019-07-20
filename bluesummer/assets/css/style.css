@@ -181,6 +181,10 @@ a:hover {
 	background: #f6f6f6;
 }
 
+.position-relative {
+	position: relative;
+}
+
 /****
 ** Header Class
 **/
@@ -319,6 +323,7 @@ a:hover {
 	align-items: center;
 	width: 100%;
 	height: 100%;
+	margin: 0;
 }
 
 .loading-box .progress {
@@ -346,8 +351,8 @@ a:hover {
 
 .music-slideshow-container .music-slideshow {
 	position: relative;
-	width: 590px !important;
-	height: 590px;
+	width: 520px !important;
+	height: 520px;
 	border-radius: 100%;
 	margin: 0 50px;
 	display: flex;
@@ -1048,6 +1053,8 @@ a:hover {
 	height: 340px;
 	padding-left: 5px !important;
 	padding-right: 5px !important;
+	object-fit: cover;
+	object-position: center;
 }
 
 .wedding-team .wedding-team-image {
@@ -1401,7 +1408,7 @@ a:hover {
 
 .home-sidebar {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	box-shadow: 0px 0px 10px rgba(150, 142, 142, 0.6);
 	display: flex;
 	justify-content: center;
@@ -1451,7 +1458,7 @@ a:hover {
 }
 
 .home-image-logo {
-	width: 30%;
+	width: 50%;
 	margin: auto;
 	display: block;
 }
@@ -2033,10 +2040,6 @@ div.page-number a:hover{
 		border-bottom: 2px solid #043f70;
 	}
 
-	.home-sidebar {
-		height: 110vh;
-	}
-
 	.wedding-slide-work {
 		padding: 100px;
 	}
@@ -2059,6 +2062,15 @@ div.page-number a:hover{
 		font-size: 2em;
 	}
 
+	.socmed-home-team {
+		bottom: 0;
+	}
+
+	footer .nav-foot img {
+		height: 15px;
+		margin: 10px;
+	}
+
 	.navbar-brand-music {
 		left: 10px;
 	}
@@ -2077,6 +2089,12 @@ div.page-number a:hover{
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
+	.pm-0 {
+		padding: 0 !important;
+	}
+	.pm-y-0 {
+		padding: 15px 0 !important;
+	}
 	.nav-about{
 		background: #000;
 	}
@@ -2100,6 +2118,9 @@ div.page-number a:hover{
 	}
 	#navbarSosmed ul li{
 		margin: auto;
+	}
+	.home-image-logo {
+		width: 30%;
 	}
 	.film-header {
 	    height: 100vh !important;

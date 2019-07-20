@@ -125,12 +125,13 @@ function initBinCanvas () {
 	"use strict";
 	c = document.getElementById("freq");
 	c.width = window.innerWidth;
-        c.height = window.innerHeight;
+        c.height = 900;
 	//get context from canvas for drawing
 	ctx = c.getContext("2d");
 
 	ctx.canvas.width  = window.innerWidth;
-  	ctx.canvas.height = window.innerHeight;
+  	ctx.canvas.height = 900;
+	console.log(window.innerHeight);
 
 	window.addEventListener( 'resize', onWindowResize, false );
 
@@ -139,7 +140,7 @@ function initBinCanvas () {
 	gradient.addColorStop(1,'#00f'); //black
 	gradient.addColorStop(0.75,'#f00'); //red
 	gradient.addColorStop(0.25,'#f00'); //yellow
-	gradient.addColorStop(0,'#ffff00'); //white
+	gradient.addColorStop(0,'#3498db'); //white
 
 
 	ctx.fillStyle = "#9c0001";
@@ -148,7 +149,7 @@ function initBinCanvas () {
 function onWindowResize()
 {
 	ctx.canvas.width  = window.innerWidth;
-  	ctx.canvas.height = window.innerHeight;
+  	ctx.canvas.height = 900;
 
 	var containerHeight = $("#song_info_wrapper").height();
 	var topVal = $(window).height() / 2 - containerHeight / 2;
@@ -204,8 +205,8 @@ function drawBars (array) {
 
 	//console.log(maxBinCount); //--> 1024
 	ctx.scale(0.5, 0.5);
-	ctx.translate(window.innerWidth, window.innerHeight);
-	ctx.fillStyle = "#fff";
+	ctx.translate(window.innerWidth, 900);
+	ctx.fillStyle = "#3498db";
 
 	var bass = Math.floor(array[1]); //1Hz Frequenz
 	var radius = 0.45 * $(window).width() <= 450 ? -(bass * 0.25 + 0.45 * $(window).width()) : -(bass * 0.25 + 450);
