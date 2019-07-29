@@ -14,11 +14,11 @@
   100% {
     filter: hue-rotate(-360deg);
     -webkit-filter: hue-rotate(-360deg);
-  }
+}
 }
 #freq {
     position: absolute;
-    top: -15vh;
+    top: -12%;
     /* left: 0; */
     right: 0;
     /* bottom: -50px; */
@@ -79,14 +79,34 @@ input, button, #loading {
 	font-size: 12px;
 }
 
-@media screen and (min-width: 1000px) {
-	#title {
-		font-size: 100px;
-	}
+@media screen and (max-width: 2000px) {
+	#freq {
+        top: -10%;
+    }
+}
 
-	#artist, #album {
-		font-size: 40px;
-	}
+@media screen and (max-width: 1500px) {
+	#freq {
+        top: -14%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+	#freq {
+        top: -14.2%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+	#freq {
+        top: -13%;
+    }
+}
+
+@media screen and (max-width: 785px) {
+	#freq {
+        top: -13%;
+    }
 }
 
 @media screen and (max-width: 500px) {
