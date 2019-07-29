@@ -18,10 +18,10 @@
 }
 #freq {
     position: absolute;
-    top: -10vh;
+    top: -15vh;
     /* left: 0; */
     right: 0;
-    bottom: -50px;
+    /* bottom: -50px; */
     margin: 0 auto;
 }
 #freq.animateHue, body.animateHue {

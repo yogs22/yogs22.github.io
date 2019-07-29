@@ -62,7 +62,7 @@ function playMusic(url)
 	request.addEventListener("error", transferFailed);
 	request.addEventListener("abort", transferCanceled);
 
-	request.open('GET', 'playlist/' + url, true);
+	request.open('GET', 'music/playlist/' + url, true);
 	request.responseType = 'arraybuffer';
 
  	// When loaded decode the data
@@ -195,6 +195,7 @@ function drawBars (array) {
 	ctx.clearRect(0, 0, c.width, c.height);
 	//the max count of bins for the visualization
 	var maxBinCount = array.length;
+
 	//space between bins
 	var space = 3;
 
@@ -230,7 +231,7 @@ function drawBars (array) {
 			//draw bin
 			//ctx.fillRect(0 + i * space, c.height - value, 2 , c.height);
                         //ctx.fillRect(i * space, c.height, 2, -value);
-                        ctx.fillRect(0, radius, $(window).width() <= 450 ? 2 : 3, -value / bar_length_factor);
+                        ctx.fillRect(0, radius, $(window).width() <= 450 ? 2 : 3, parseInt((-value / bar_length_factor) + 50));
                         ctx.rotate((180 / 128) * Math.PI/180);
 		}
 	}
@@ -244,7 +245,7 @@ function drawBars (array) {
 			//ctx.fillRect(0 + i * space, c.height - value, 2 , c.height);
 						//ctx.fillRect(i * space, c.height, 2, -value);
 						ctx.rotate(-(180 / 128) * Math.PI/180);
-						ctx.fillRect(0, radius, $(window).width() <= 450 ? 2 : 3, -value / bar_length_factor);
+						ctx.fillRect(0, radius, $(window).width() <= 450 ? 2 : 3, parseInt((-value / bar_length_factor) + 50));
 		}
 	}
 
@@ -257,9 +258,10 @@ function drawBars (array) {
 			//ctx.fillRect(0 + i * space, c.height - value, 2 , c.height);
 						//ctx.fillRect(i * space, c.height, 2, -value);
 						ctx.rotate((180 / 128) * Math.PI/180);
-						ctx.fillRect(0, radius, $(window).width() <= 450 ? 2 : 3, -value / bar_length_factor);
+						ctx.fillRect(0, radius, $(window).width() <= 450 ? 2 : 3, parseInt((-value / bar_length_factor) + 50));
 		}
 	}
+
 
 	ctx.restore();
 }
