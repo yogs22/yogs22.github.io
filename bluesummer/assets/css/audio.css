@@ -103,6 +103,12 @@ input, button, #loading {
     }
 }
 
+@media screen and (max-width: 1200px) {
+	#freq {
+        top: -16.5%;
+    }
+}
+
 @media screen and (max-width: 785px) {
 	#freq {
         top: -13%;
