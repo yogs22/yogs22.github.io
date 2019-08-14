@@ -91,6 +91,12 @@ input, button, #loading {
     }
 }
 
+@media screen and (min-width: 1400px) {
+    .music-header {
+        margin-top: 8% !important;
+    }
+}
+
 @media screen and (max-width: 1400px) {
 	#freq {
         top: -15.5%;
