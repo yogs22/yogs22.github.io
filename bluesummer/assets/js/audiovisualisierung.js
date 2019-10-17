@@ -62,7 +62,7 @@ function playMusic(url)
 	request.addEventListener("error", transferFailed);
 	request.addEventListener("abort", transferCanceled);
 
-	request.open('GET', 'playlist/' + url, true);
+	request.open('GET', 'music/playlist/' + url, true);
 	request.responseType = 'arraybuffer';
 
  	// When loaded decode the data
