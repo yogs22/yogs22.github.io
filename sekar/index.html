@@ -4,11 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sekar Tech Company</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/sekar/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/sekar/assets/css/style.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100">
             <div class="container">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,25 +18,17 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item ml-4 active">
+                            <a class="nav-link" href="#">About Us </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item ml-4">
+                            <a class="nav-link" href="#">Services</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                        <li class="nav-item ml-4">
+                            <a class="nav-link" href="#">Client</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <li class="nav-item ml-4">
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -44,15 +37,34 @@
 
         <header class="d-flex justify-content-center align-items-center text-center">
             <div class="container">
-                <h2>Sekar Tech Company</h2>
+                <h1 class="mb-5">Sekar Tech Company</h1>
 
-                <h4>Software Development</h4>
-                <div class="container">
-                    <p>Custom software untuk system bisnis anda tidak perlu mahal, Bersama kami,semua bisa dibicarakan direalisasikan. Konusltasikan kebutuhan software anda kepada <b>SEEKARTECH</b> </p>
+                <h3 class="mt-5 mb-4">Software Development</h3>
+                <div class="row">
+                    <div class="col-md-8 mr-auto ml-auto">
+                        <!-- The slideshow -->
+                        <div class="slideshow-container">
+                            <div class="slideshow-item fades active">
+                                <p>Custom software untuk system bisnis anda tidak perlu mahal, Bersama kami,semua bisa dibicarakan direalisasikan. Konusltasikan kebutuhan software anda kepada <b>SEEKARTECH</b> </p>
+                            </div>
+                            <div class="slideshow-item fades">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                            <div class="slideshow-item fades">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                        </div>
 
+                        <div class="mb-3 text-center dot-container">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+
+                    </div>
                 </div>
-                <a href="#" class="btn mr-2">Learn More</a>
-                <a href="#" class="btn btn-primary">Contact Us</a>
+                <button href="#" class="btn btn-default btn-rounded mr-2">Learn More</button>
+                <button href="#" class="btn btn-rounded btn-grad-blue">Contact Us</button>
             </div>
         </header>
 
@@ -60,11 +72,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-
+                        <img src="/sekar/assets/img/section-about.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6">
+                        <img src="/sekar/assets/img/seekar-img.png" class="img-50 mb-3" alt="">
                         <p>Kami hadir dan ada karena di butuhkan oleh anda untuk menjadi mitra terbaik. seekartech telah menjadi andalan dalam menyediakan layanan custom pembuatan system, Software, Webiste, App, Pemasaran digital dan IT digital modern lainya.</p>
-                        <a href="#"></a>
+                        <button href="#" class="btn btn-rounded btn-grad-blue mt-2">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -125,5 +138,8 @@
             </div>
         </footer>
 
-    </body>
+      <script src="/sekar/assets/js/jquery-3.2.1.min.js"></script>
+      <script src="/sekar/assets/js/bootstrap.min.js"></script>
+      <script src="/sekar/assets/js/script.js"></script>
+  </body>
 </html>

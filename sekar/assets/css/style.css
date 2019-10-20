@@ -1,8 +1,114 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+h5 {
+    font-weight: 100;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+section {
+    min-height: 100vh;
 }
 
 /** Header **/
 header {
     height: 100vh;
+    background: left url('../img/header-1.png'), right url('../img/header-2.png');
+    background-size: 20%;
+    background-repeat: no-repeat;
+}
+
+/** Slideshow **/
+.slideshow-container {
+    position: relative;
+}
+
+.slideshow-item {
+    display: none;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+.dot-container .active {
+    background-color: #717171;
+}
+
+/** Image **/
+.img-50 {
+    width: 50%;
+}
+
+/* Fading animation */
+.fades {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+/** Custom Button **/
+.btn {
+    padding: 10px 36px;
+    background-size: 200% auto;
+    transition: 0.5s;
+}
+
+.btn-rounded {
+    border-radius: 50px;
+}
+
+.btn-default {
+    background: #fff;
+    color: #001;
+    border: 1px solid #001;
+}
+
+.btn-default:hover {
+    background: #eee;
+    color: #001;
+}
+
+.btn-grad-blue {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 100%, #1FA2FF 100%);
+    box-shadow: 1px 3px 10px #eee;
+    color: #fff;
+}
+
+.btn-grad-blue:hover {
+    background-position: right center;
 }
