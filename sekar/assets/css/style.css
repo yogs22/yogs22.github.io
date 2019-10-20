@@ -21,6 +21,20 @@ section {
     min-height: 100vh;
 }
 
+.py-6 {
+    padding-bottom: 6rem !important;
+    padding-top: 6rem !important;
+}
+
+.py-7 {
+    padding-bottom: 7rem !important;
+    padding-top: 7rem !important;
+}
+
+.mt-7 {
+    margin-top: 7rem !important;
+}
+
 /** Header **/
 header {
     height: 100vh;
@@ -53,9 +67,27 @@ header {
     background-color: #717171;
 }
 
-/** Image **/
+/** Image & BG **/
 .img-50 {
     width: 50%;
+}
+
+.bg-dot {
+    background-image: url('../img/dotpattern.png');
+}
+
+.bg-grey {
+    background-color: #ebf6fd;
+}
+
+.bg-blue {
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+}
+
+.section-border {
+    border-top: 3px solid #ebf6fd;
 }
 
 /* Fading animation */
@@ -93,14 +125,14 @@ header {
 }
 
 .btn-default {
-    background: #fff;
+    background: transparent;
     color: #001;
-    border: 1px solid #001;
+    border: 1px solid #b7b5b5;
 }
 
 .btn-default:hover {
-    background: #eee;
-    color: #001;
+    background: #f8f8f8;
+    color: #001 !important;
 }
 
 .btn-grad-blue {
@@ -111,4 +143,24 @@ header {
 
 .btn-grad-blue:hover {
     background-position: right center;
+}
+
+.border-white {
+    border: 1px solid #fff;
+}
+
+/** Service **/
+.service-box {
+    padding: 4.5rem 3rem;
+    box-shadow: 6px 9px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.service-box:hover {
+    box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.3);
 }
