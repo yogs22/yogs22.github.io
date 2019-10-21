@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="/sekar/assets/css/style.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-fixed w-100">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="/sekar/assets/img/seekar.png" class="w-100" alt=""> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,17 +21,17 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ml-4 active">
-                            <a class="nav-link" href="#">About Us </a>
+                        <li class="nav-item ml-4">
+                            <a class="nav-link" href="#" data-slide="slide" data-slide-target="#about" data-scroll="about">About Us </a>
                         </li>
                         <li class="nav-item ml-4">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#" data-slide="slide" data-slide-target="#service" data-scroll="service">Services</a>
                         </li>
                         <li class="nav-item ml-4">
-                            <a class="nav-link" href="#">Client</a>
+                            <a class="nav-link" href="#" data-slide="slide" data-slide-target="#client" data-scroll="client">Client</a>
                         </li>
                         <li class="nav-item ml-4">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#" data-slide="slide" data-slide-target="#footer" data-scroll="footer">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -73,7 +73,7 @@
             </div>
         </header>
 
-        <section id="about" class="section-border">
+        <section id="about" class="section-border" data-anchor="about">
             <div class="container py-6">
                 <div class="row">
                     <div class="col-lg-6">
@@ -88,7 +88,7 @@
             </div>
         </section>
 
-        <section class="bg-dot" id="service">
+        <section class="bg-dot" id="service" data-anchor="service">
             <div class="container py-7">
                 <div class="text-center">
                     <h2>Layanan Seekartech</h2>
@@ -151,7 +151,7 @@
             </div>
         </section>
 
-        <div id="client" class="bg-blue py-7">
+        <div id="client" class="bg-blue py-7" data-anchor="client">
             <div class="container text-white text-center">
                 <h2 class="mb-5 pb-3">Our Client</h2>
                 <div class="row mt-4">
@@ -242,7 +242,7 @@
             </div>
         </div>
 
-        <footer class="py-7 text-white">
+        <footer class="py-7 text-white" id="footer" data-anchor="footer">
             <div class="container">
                 <h2 class="mb-5 text-center">MUDAH MENGHUBUNGI KAMI</h2>
                 <div class="row">

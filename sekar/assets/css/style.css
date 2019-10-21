@@ -47,6 +47,21 @@ a:hover {
     cursor: pointer;
 }
 
+/** Navbar **/
+.navbar {
+    z-index: 100;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.navbar.scrolled {
+    background: #fff !important;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.13);
+}
+
 /** Header **/
 header {
     height: 100vh;
