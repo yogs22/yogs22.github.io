@@ -39,12 +39,24 @@ section {
     font-size: 1.3rem;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
 /** Header **/
 header {
     height: 100vh;
     background: left url('../img/header-1.png'), right url('../img/header-2.png');
     background-size: 20%;
     background-repeat: no-repeat;
+}
+
+.navbar-collapse {
+    background: #fff;
 }
 
 /** Slideshow **/
@@ -72,12 +84,21 @@ header {
 }
 
 /** Image & BG **/
+.img-30 {
+    width: 30%;
+}
+
 .img-50 {
     width: 50%;
 }
 
 .img-80 {
     width: 80%;
+}
+
+.img-fit {
+    object-fit: cover;
+    object-position: center;
 }
 
 .bg-dot {
@@ -119,6 +140,24 @@ header {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
     .text {font-size: 11px}
+}
+
+/** Team **/
+.team-wrapper {
+    height: 500px;
+}
+
+.team-wrapper .slick-list {
+    height: 100%;
+    padding: 100px 50px !important;
+}
+
+.team-item img {
+    width: 306px !important;
+    height: 306px !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
 }
 
 /** Custom Button **/
@@ -185,4 +224,15 @@ footer {
     color: #fff;
     width: 100%;
     height: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar-brand {
+        width: 70%;
+    }
+
+    .bottom-footer .text-right {
+        margin-top: 20px;
+        text-align: left !important;
+    }
 }
