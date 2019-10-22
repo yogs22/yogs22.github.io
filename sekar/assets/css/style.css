@@ -31,6 +31,10 @@ section {
     padding-top: 7rem !important;
 }
 
+.p-6 {
+    padding: 6em !important;
+}
+
 .mt-7 {
     margin-top: 7rem !important;
 }
@@ -57,6 +61,10 @@ a:hover {
     -o-transition: 0.5s ease;
 }
 
+.navbar-collapse {
+    background: transparent !important;
+}
+
 .navbar.scrolled {
     background: #fff !important;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.13);
@@ -65,9 +73,6 @@ a:hover {
 /** Header **/
 header {
     height: 100vh;
-    background: left url('../img/header-1.png'), right url('../img/header-2.png');
-    background-size: 20%;
-    background-repeat: no-repeat;
 }
 
 .navbar-collapse {
@@ -120,8 +125,24 @@ header {
     background-image: url('../img/dotpattern.png');
 }
 
+.bg-shape {
+    background: url('../img/bg_pattern.png');
+    background-repeat: no-repeat;
+    background-size: 3%;
+}
+
+.bg-pc {
+    background: left url('../img/header-1.png'), right url('../img/header-2.png');
+    background-size: 20%;
+    background-repeat: no-repeat;
+}
+
 .bg-grey {
     background-color: #ebf6fd;
+}
+
+.bg-white {
+    background: #fff;
 }
 
 .bg-blue {
@@ -185,6 +206,18 @@ header {
 /** Team **/
 .team-wrapper {
     height: 500px;
+}
+
+.team-overlay {
+    position: absolute;
+    bottom: 55px;
+    width: 60%;
+    text-align: center;
+    background: rgba(123, 120, 120, 0.54);
+    color: #fff;
+    padding: 15px;
+    left: 20%;
+    font-size: 12px;
 }
 
 .team-wrapper .slick-list {
@@ -285,7 +318,23 @@ footer {
         height: 260px !important;
     }
 
-    header {
-        background: white;
+    .bg-pc {
+        background: transparent;
+    }
+
+    .p-6 {
+        padding: 0 !important;
+    }
+
+    .team-overlay {
+        padding: 10px;
+    }
+
+    .team-overlay h4 {
+        font-size: 1.1rem;
+    }
+
+    .team-overlay span {
+        font-size: 0.8rem;
     }
 }
