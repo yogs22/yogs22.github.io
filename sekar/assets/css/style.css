@@ -342,4 +342,8 @@ footer {
     .team-overlay span {
         font-size: 0.8rem;
     }
+
+    .bottom-footer .col-lg-6 {
+        text-align: center !important;
+    }
 }
