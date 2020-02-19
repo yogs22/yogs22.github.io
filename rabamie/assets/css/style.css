@@ -8,13 +8,30 @@
     src: url('../fonts/poppins/Poppins-SemiBold.otf');
 }
 
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../fonts/poppins/Poppins-Bold.otf');
+}
+
 body {
     overflow-x: hidden;
     font-family: 'poppins';
 }
 
+p {
+    line-height: 1.9rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'poppins-bold';
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
 .label-web {
-    color: #4CB8C4;
+    color: #c71d1d;
     font-size: 1.3rem;
     font-weight: bold;
 }
@@ -23,17 +40,37 @@ body {
     height: 100%;
 }
 
+.bg-grey {
+    background: #eef8f2;
+}
+
+.bg-dotted {
+    background-image: url('../img/dotted.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-red {
+    color: #c71d1d;
+}
+
+.img-center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 /*************************************
  * Header Style
  *************************************/
  header {
-     height: 100vh;
+     height: 110vh;
      position: relative;
  }
 
 header .header-title {
     line-height: 4.2rem;
-    font-family: 'poppins-semi-bold';
+    font-family: 'poppins-bold';
 }
 
 .header-right {
@@ -48,6 +85,31 @@ header .header-title {
 }
 
 /*************************************
+ * Available Style
+ *************************************/
+#available .logo {
+    max-width: 100%;
+}
+
+/*************************************
+ * About Style
+ *************************************/
+#about .img-border {
+    border-radius: 50% 10% 10% 10%;
+}
+
+.card-special {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+}
+
+.card-special span {
+    line-height: 1.7rem;
+    color: #726a84;
+    font-size: 0.9rem;
+}
+
+/*************************************
  * Button Style
  *************************************/
 
@@ -58,10 +120,10 @@ header .header-title {
     font-weight: bold;
 }
 
-.btn-grad-green {
-    background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD 71%);
+.btn-grad-red {
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217 71%);
 }
 
-.btn-grad-green:hover {
+.btn-grad-red:hover {
     background-position: right center;
 }
