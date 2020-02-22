@@ -40,6 +40,10 @@ h2 {
     height: 100%;
 }
 
+.h-100vh {
+    height: 100vh;
+}
+
 .bg-grey {
     background: #eef8f2;
 }
@@ -48,6 +52,13 @@ h2 {
     background-image: url('../img/dotted.png');
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.bg-ornament {
+    background-image: url('../img/bg-ornament.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .text-red {
@@ -107,6 +118,31 @@ header .header-title {
     line-height: 1.7rem;
     color: #726a84;
     font-size: 0.9rem;
+}
+
+/*************************************
+ * Resekker Style
+ *************************************/
+#reseller {
+    background-color: #dc2c2b;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 64px 0px 0px 0px;
+    height: 110vh;
+}
+
+#reseller h2 {
+    font-size: 2.3rem;
+}
+
+.reseller-image {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.reseller-image img {
+    display: block;
+    margin: auto;
 }
 
 /*************************************
