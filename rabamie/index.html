@@ -4,13 +4,15 @@
         <meta charset="utf-8">
         <title>Rabamie - Mie Anti MSG</title>
         <link rel="stylesheet" href="/rabamie/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/rabamie/assets/vendor/owl-carousel/dist/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="/rabamie/assets/vendor/aos-next/src/sass/aos.css" />
         <link rel="stylesheet" href="/rabamie/assets/css/style.css">
     </head>
     <body>
         <header class="pt-3">
             <div class="container">
-                <div class="row" class="h-100">
-                    <div class="col-lg-7 col-12">
+                <div class="row h-100">
+                    <div class="col-lg-7 col-12" data-aos="fade-up" data-aos-duration="800">
                         <div class="d-flex align-items-center h-100">
                             <div class="flex-row">
                                 <div class="flex-item">
@@ -37,7 +39,7 @@
 
         <section id="available" class="bg-grey p-5">
             <div class="container">
-                <div class="row">
+                <div class="row" data-aos="fade-up" data-aos-duration="800">
                     <div class="col-lg-2">
                         <img src="/rabamie/assets/img/available/company.png" class="logo" alt="">
                     </div>
@@ -65,7 +67,7 @@
                 <h2 class="text-center">Mengapa Rabamie <span class="text-red">begitu istimewa</span></h2>
                 <img src="/rabamie/assets/img/divider.png" class="img-center mt-4" alt="">
                 <div class="row my-5 text-center">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-duration="300">
                         <div class="card-special p-4">
                             <img src="/rabamie/assets/img/feature3.png" class="my-4" alt="">
                             <h5 class="text-red mb-4">Tanpa Pengawet Buatan</h5>
@@ -73,14 +75,14 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="card-special p-4">
+                        <div class="card-special p-4" data-aos="fade-up" data-aos-duration="600">
                             <img src="/rabamie/assets/img/feature2.png" class="my-4" alt="">
                             <h5 class="text-red mb-4">Harga Terjangkau</h5>
                             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</span>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="card-special p-4">
+                        <div class="card-special p-4" data-aos="fade-up" data-aos-duration="900">
                             <img src="/rabamie/assets/img/feature1.png" class="my-4" alt="">
                             <h5 class="text-red mb-4">Enak dan Renyah</h5>
                             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</span>
@@ -89,7 +91,7 @@
                 </div>
 
                 <div class="row pt-5">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
                         <div class="d-flex align-items-center h-100">
                             <div class="flex-wrap">
                                 <div class="flex-item">
@@ -112,19 +114,75 @@
             <div class="h-100 bg-ornament">
                 <div class="container">
                     <div class="row text-center col-lg-10 offset-lg-1 col-12 text-white">
-                        <div class="mb-4">
+                        <div class="mb-4" data-aos="fade-up" data-aos-duration="800">
                             <h2>Kami membuka penawaran waralaba dengan omzet yang stabil dan laporan keuangan yang transparan</h2>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3" data-aos="fade-up" data-aos-duration="800">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
                         </div>
                     </div>
-                    <div class="position-absolute reseller-image">
+                    <div class="position-absolute reseller-image" data-aos="fade-up" data-aos-duration="800">
                         <img src="/rabamie/assets/img/section-reseller.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="outlet" class="bg-dotted">
+            <div class="container py-5 mt-5">
+                <h2 class="text-center">Lihat Outlet <span class="text-red">Rabamie</span></h2>
+                <p class="text-center">Buruan segera daftar menjadi mitra kami, karena kami sudah tersedia di berbagai wilayah di Indonesia</p>
+                <img src="/rabamie/assets/img/divider.png" class="img-center mt-4" alt="">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><h4>1</h4></div>
+                    <div class="item"><h4>2</h4></div>
+                    <div class="item"><h4>3</h4></div>
+                    <div class="item"><h4>4</h4></div>
+                    <div class="item"><h4>5</h4></div>
+                    <div class="item"><h4>6</h4></div>
+                    <div class="item"><h4>7</h4></div>
+                    <div class="item"><h4>8</h4></div>
+                    <div class="item"><h4>9</h4></div>
+                    <div class="item"><h4>10</h4></div>
+                    <div class="item"><h4>11</h4></div>
+                    <div class="item"><h4>12</h4></div>
+                </div>
+            </div>
+        </section>
+
+    <script src="/rabamie/assets/js/bootstrap.min.js"></script>
+    <script src="/rabamie/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/rabamie/assets/vendor/owl-carousel/dist/owl.carousel.min.js"></script>
+    <script src="/rabamie/assets/vendor/aos-next/src/js/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+        $(document).ready(function(){
+          $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 9000,
+            autoplayHoverPause: true,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+          });
+        });
+    </script>
     </body>
 </html>
