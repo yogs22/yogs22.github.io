@@ -5,6 +5,7 @@
         <title>Rabamie - Mie Anti MSG</title>
         <link rel="stylesheet" href="/rabamie/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/rabamie/assets/vendor/owl-carousel/dist/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="/rabamie/assets/vendor/owl-carousel/dist/assets/owl.theme.default.min.css" />
         <link rel="stylesheet" href="/rabamie/assets/vendor/aos-next/src/sass/aos.css" />
         <link rel="stylesheet" href="/rabamie/assets/css/style.css">
     </head>
@@ -133,19 +134,65 @@
                 <h2 class="text-center">Lihat Outlet <span class="text-red">Rabamie</span></h2>
                 <p class="text-center">Buruan segera daftar menjadi mitra kami, karena kami sudah tersedia di berbagai wilayah di Indonesia</p>
                 <img src="/rabamie/assets/img/divider.png" class="img-center mt-4" alt="">
-                <div class="owl-carousel owl-theme">
-                    <div class="item"><h4>1</h4></div>
-                    <div class="item"><h4>2</h4></div>
-                    <div class="item"><h4>3</h4></div>
-                    <div class="item"><h4>4</h4></div>
-                    <div class="item"><h4>5</h4></div>
-                    <div class="item"><h4>6</h4></div>
-                    <div class="item"><h4>7</h4></div>
-                    <div class="item"><h4>8</h4></div>
-                    <div class="item"><h4>9</h4></div>
-                    <div class="item"><h4>10</h4></div>
-                    <div class="item"><h4>11</h4></div>
-                    <div class="item"><h4>12</h4></div>
+                <div data-aos="fade-up" data-aos-duration="900">
+                    <div class="owl-carousel outlet-carousel owl-theme mt-5">
+                    <div class="item text-white">
+                        <div class="item-overlay"></div>
+                        <img src="/rabamie/assets/img/outlet-1.jpg" class="item-image">
+                        <div class="item-caption px-4 py-3">
+                            <span class="font-weight-bold">Rabamie Sleman</span>
+                        </div>
+                    </div>
+                    <div class="item text-white">
+                        <div class="item-overlay"></div>
+                        <img src="/rabamie/assets/img/outlet-2.jpg" class="item-image">
+                        <div class="item-caption px-4 py-3">
+                            <span class="font-weight-bold">Rabamie Magelang</span>
+                        </div>
+                    </div>
+                    <div class="item text-white">
+                        <div class="item-overlay"></div>
+                        <img src="/rabamie/assets/img/outlet-3.jpg" class="item-image">
+                        <div class="item-caption px-4 py-3">
+                            <span class="font-weight-bold">Rabamie Condong Catur</span>
+                        </div>
+                    </div>
+                    <div class="item text-white">
+                        <div class="item-overlay"></div>
+                        <img src="/rabamie/assets/img/outlet-4.jpg" class="item-image">
+                        <div class="item-caption px-4 py-3">
+                            <span class="font-weight-bold">Rabamie Sleman</span>
+                        </div>
+                    </div>
+                    <div class="item text-white">
+                        <div class="item-overlay"></div>
+                        <img src="/rabamie/assets/img/outlet-5.jpg" class="item-image">
+                        <div class="item-caption px-4 py-3">
+                            <span class="font-weight-bold">Rabamie Sleman</span>
+                        </div>
+                    </div>
+                    <div class="item text-white">
+                        <div class="item-overlay"></div>
+                        <img src="/rabamie/assets/img/outlet-6.jpg" class="item-image">
+                        <div class="item-caption px-4 py-3">
+                            <span class="font-weight-bold">Rabamie Sleman</span>
+                        </div>
+                    </div>
+                    <div class="item text-white">
+                        <div class="item-overlay"></div>
+                        <img src="/rabamie/assets/img/outlet-7.jpg" class="item-image">
+                        <div class="item-caption px-4">
+                            <span class="font-weight-bold">Rabamie Sleman</span>
+                        </div>
+                    </div>
+                    <div class="item text-white">
+                        <div class="item-overlay"></div>
+                        <img src="/rabamie/assets/img/outlet-1.jpg" class="item-image">
+                        <div class="item-caption">
+                            <span class="font-weight-bold">Rabamie Sleman</span>
+                        </div>
+                    </div>
+                </div>                    
                 </div>
             </div>
         </section>
@@ -159,10 +206,10 @@
         $(document).ready(function(){
           $('.owl-carousel').owlCarousel({
             loop: true,
-            margin: 10,
+            margin: 15,
             nav: true,
             dots: true,
-            autoplay: true,
+            // autoplay: true,
             autoplayTimeout: 9000,
             autoplayHoverPause: true,
             responsiveClass:true,
