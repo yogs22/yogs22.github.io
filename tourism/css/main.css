@@ -219,10 +219,10 @@ hr {
 }
 
 /* Animasi */
-.slide{
+.slides {
   visibility: hidden;
 }
-.slideanim{
+.slideanim {
   animation-name: slide;
   -webkit-animation-name: slide;
   animation-duration: 1s;
@@ -684,7 +684,8 @@ hr {
 
 .section-header-inner {
   position: relative;
-  margin: 120px 230px;
+  height: 100vh;
+  margin-top: 25vh;
 }
 @media (max-width: 420px) {
   .section-header-inner {
