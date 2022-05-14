@@ -105,7 +105,18 @@
 			<div class="col-lg-6 col-md-6 col-xs-12 right-about">
 				<br>
 				<h3 class="title">Experience</h3>
-				<p class="right-about-text">I have more than 6 year experience in web programming, attend various events, work as freelancer and currently working at PT. Royal D'Paragon Land</p>
+				<?php
+				    require 'admin/function.php';
+				    $pengalaman = query("SELECT * FROM pengalaman")
+				 ?>
+				<ul>
+		            <?php foreach( $pengalaman as $row) : ?>
+						<li>
+							<h4><?= $row['perusahaan'] ?></h4>
+							<p><?= $row['jabatan'] ?> - <?= $row['durasi'] ?></p>
+						</li>
+					<?php endforeach ?>
+				</ul>
 			</div>
 			<div class="text-center w-100">
 				<a href="" class="btn-about" data-slide="slide" data-slide-target="#skills">See The Skills</a>
